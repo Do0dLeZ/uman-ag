@@ -1,4 +1,18 @@
 :root {
   --menu-item-color-hover: rgb(241, 207, 105);
   --menu-item-color: rgb(255, 255, 255);
+
+  --sections-title-color: white;
+
+  --background-color-why-us: rgb(241, 207, 105);
+  --background-color-work-scope: rgb(55, 53, 59);
+  --background-color-comments: rgb(241, 207, 105);
+
+  --border-color-read-more-scope-work: white;
+  --border-color-read-more-scope-work-hover: rgb(241, 207, 105);
+
+  --how-we-work-max-step-color: rgb(241, 207, 105);
+
+  --background-color-overlay-invisible: rgba(55, 53, 59, 0);
+  --background-color-overlay-visible: rgba(55, 53, 59, 0.9);
 }

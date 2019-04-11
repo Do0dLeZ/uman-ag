@@ -17,26 +17,33 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header-wrapper">
+      <div class="header-banner-wrapper">
         <header class="header">
+          <a href="#" class="logo-link">
+            <img
+              src="./images/uman-ag-logo.svg"
+              alt="logo"
+              class="logo-icon"
+              width="200px"
+              height="100px"
+            />
+          </a>
           <nav class="nav">
-            <a href="#" class="logo-link">
-              <img
-                src="./images/uman-ag-logo.svg"
-                alt="logo"
-                class="logo-icon"
-                width="200px"
-                height="100px"
-              />
-            </a>
             <ul class="nav-list">
-              <li class="nav-item"><a href="#" class="nav-link">Головна</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Про нас</a></li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Послуги</a>
+                <a href="#why-us" class="nav-link">Про нас</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Контакти</a>
+                <a href="#service" class="nav-link">Послуги</a>
+              </li>
+              <li class="nav-item">
+                <a href="#scope-of-work" class="nav-link">Напрямки</a>
+              </li>
+              <li class="nav-item">
+                <a href="#how-we-work" class="nav-link">Кроки</a>
+              </li>
+              <li class="nav-item">
+                <a href="#footer" class="nav-link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -50,18 +57,19 @@
             Вже сьогодні саме для Вас ми маємо екслюзивні пропозиції щодо
             працевлаштування за кордоном з заробітком більше ніж 1200 €/міс
           </h2>
+          <a href="#footer" class="main-registry-btn">зареєструватись</a>
         </div>
       </div>
     </div>
     <main class="main">
-      <section class="why-us">
+      <section class="why-us rotate-line-before rotate-line-after">
         <div class="why-us-wrapper">
-          <h2 class="why-us-title">чому обирають нас?</h2>
+          <h2 class="sections-title" id="why-us">чому обирають нас?</h2>
           <ul class="why-us-list">
             <li class="why-us-item">
               <p class="why-us-number">01.</p>
-              <p class="why-us-item-title">надійна репутація</p>
-              <p class="why-us-description">
+              <p class="article-title">надійна репутація</p>
+              <p class="article-description">
                 Наша команда з 1999 року "спеціалізується на робочих,
                 навачальних та імміграційних програмах до розвинуттх країн
                 світу..."
@@ -69,8 +77,8 @@
             </li>
             <li class="why-us-item">
               <p class="why-us-number">02.</p>
-              <p class="why-us-item-title">легальність програм</p>
-              <p class="why-us-description">
+              <p class="article-title">легальність програм</p>
+              <p class="article-description">
                 Працюємо у відповідності з законодавством України. Співпрацюємо
                 лише з акредитованими імміграційними консультантами. Маємо
                 налагоджені тісні, перевірені зв’язки з закордонними
@@ -79,8 +87,10 @@
             </li>
             <li class="why-us-item">
               <p class="why-us-number">03.</p>
-              <p class="why-us-item-title">індивідуальний підхід</p>
-              <p class="why-us-description">
+              <p class="article-title">
+                індивідуальний підхід
+              </p>
+              <p class="article-description">
                 Під час консультації, провідні спеціалісти підберуть
                 найвигідніші країну, напрямок та програму базуючись на Ваших
                 вимогах
@@ -88,8 +98,8 @@
             </li>
             <li class="why-us-item">
               <p class="why-us-number">04.</p>
-              <p class="why-us-item-title">довіра</p>
-              <p class="why-us-description">
+              <p class="article-title">довіра</p>
+              <p class="article-description">
                 Скориставшись нашими послугами, Ви станете одним з понад 2 000
                 інших людей які в даний момент працевлаштовані або кардинально
                 змінили своє життя на краще завдяки нам, іммігрувавши до
@@ -98,8 +108,8 @@
             </li>
             <li class="why-us-item">
               <p class="why-us-number">05.</p>
-              <p class="why-us-item-title">повний супровід</p>
-              <p class="why-us-description">
+              <p class="article-title">повний супровід</p>
+              <p class="article-description">
                 З початку складання договору, ми максимально забезпечимо Вам
                 підтримку починаючи від збору документів до очікуваного
                 результату
@@ -110,7 +120,9 @@
       </section>
       <section class="section-service">
         <div class="service-wrapper">
-          <h2 class="service-title">наші послуги</h2>
+          <h2 class="sections-title service-title" id="service">
+            наші послуги
+          </h2>
           <ul class="service-list">
             <li class="service-item">
               <img
@@ -120,13 +132,18 @@
                 width="114px"
                 height="100px"
               />
-              <h3 class="service-name">робота & стажування</h3>
-              <p class="service-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-                ea voluptatum aperiam accusantium ducimus perspiciatis
-                blanditiis nihil! Incidunt, atque assumenda.
+              <h3 class="article-title service-title">work & training</h3>
+              <p class="service-description article-description">
+                Українські фахівці/випускники ВУЗ-ів все частіше зіштовхуються з
+                проблемою неможливості знайти роботу. Тому сотні тисяч громадян
+                шукають варіанти працевлаштування за межами нашої країни...
               </p>
-              <a href="" class="service-read-more-link">детальніше</a>
+              <a
+                href="#"
+                class="service-read-more js-open-modal"
+                data-modal="work-modal"
+                >детальніше</a
+              >
             </li>
             <li class="service-item">
               <img
@@ -136,13 +153,18 @@
                 width="89px"
                 height="93px"
               />
-              <h3 class="service-name">імміграція</h3>
-              <p class="service-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-                ea voluptatum aperiam accusantium ducimus perspiciatis
-                blanditiis nihil! Incidunt, atque assumenda.
+              <h3 class="article-title service-title">immigration</h3>
+              <p class="service-description article-description">
+                «Добре там, де нас немає» - думають багато людей та роками
+                живуть на одному й тому ж місці. Але світ занадто різноманітний,
+                щоб все життя провести в одній країні...
               </p>
-              <a href="" class="service-read-more-link">детальніше</a>
+              <a
+                href="#"
+                class="service-read-more js-open-modal"
+                data-modal="immigration-modal"
+                >детальніше</a
+              >
             </li>
             <li class="service-item">
               <img
@@ -152,20 +174,26 @@
                 width="129px"
                 height="103px"
               />
-              <h3 class="service-name">навчання за кордоном</h3>
-              <p class="service-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-                ea voluptatum aperiam accusantium ducimus perspiciatis
-                blanditiis nihil! Incidunt, atque assumenda.
+              <h3 class="article-title service-title">study abroad</h3>
+              <p class="service-description article-description">
+                Ви зацікавлені отримати хороше робоче місце? Тоді краще зробити
+                вибір на користь вищої освіти за кордоном...
               </p>
-              <a href="" class="service-read-more-link">детальніше</a>
+              <a
+                href="#"
+                class="service-read-more js-open-modal"
+                data-modal="study-modal"
+                >детальніше</a
+              >
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-scope-of-work">
+      <section
+        class="section-scope-of-work rotate-line-before rotate-line-after"
+      >
         <div class="scope-of-work-wrapper">
-          <h2 class="scope-of-work-title">нарямки діяльності</h2>
+          <h2 class="sections-title" id="scope-of-work">напрямки діяльності</h2>
           <ul class="scope-of-work-list">
             <li class="scope-of-work-item">
               <img
@@ -173,41 +201,58 @@
                 alt="scope-agriculture"
                 class="scope-of-work-img"
               />
-              <h3 class="scope-of-work-name">Agriculture</h3>
-              <p class="scope-of-work-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                quam quidem eligendi dolore odio, dolorem, saepe expedita error
-                repellendus obcaecati architecto eaque possimus deleniti?
+              <h3 class="article-title scope-of-work-name">Agriculture</h3>
+              <p class="article-description scope-of-work-description">
+                Галузь сільського господарства та ветеринарії дозволяє вибирати
+                з безлічі різних опцій працевлаштування та, важливо пам'ятати,
+                що хороші професіонали цієї сфери затребувані практично в
+                будь-якій країні світу....
               </p>
-              <a href="" class="scope-of-work-more-link">детальніше</a>
+              <a
+                href=""
+                class="scope-of-work-more-link js-open-modal"
+                data-modal="agriculture-modal"
+                >детальніше</a
+              >
             </li>
             <li class="scope-of-work-item">
               <img
-                src="./images/scope-horticulture.png"
+                src="./images/horticulture.jpg"
                 alt="scope-horticulture"
                 class="scope-of-work-img"
               />
-              <h3 class="scope-of-work-name">Horticulture</h3>
-              <p class="scope-of-work-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                quam quidem eligendi dolore odio, dolorem, saepe expedita error
-                repellendus obcaecati architecto eaque possimus deleniti?
+              <h3 class="article-title scope-of-work-name">Horticulture</h3>
+              <p class="article-description scope-of-work-description">
+                Садівництво - це унікальна та високоприбуткова професія. Якщо
+                Вам подобається вирощуввати, доглядати та збирати рослини або
+                фрукти - робота/стажуваня в країнах Європи а також США і Канаді
+                стануть великим прибутком та корисним досвідом...
               </p>
-              <a href="" class="scope-of-work-more-link">детальніше</a>
+              <a
+                href=""
+                class="scope-of-work-more-link js-open-modal"
+                data-modal="horticulture-modal"
+                >Детальніше</a
+              >
             </li>
             <li class="scope-of-work-item">
               <img
-                src="./images/scope-food-production.png"
+                src="./images/food-production.jpg"
                 alt="scope-food-production"
                 class="scope-of-work-img"
               />
-              <h3 class="scope-of-work-name">food production</h3>
-              <p class="scope-of-work-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                quam quidem eligendi dolore odio, dolorem, saepe expedita error
-                repellendus obcaecati architecto eaque possimus deleniti?
+              <h3 class="article-title scope-of-work-name">food production</h3>
+              <p class="article-description scope-of-work-description">
+                Харчова промисловість є однією з найголовніших галузей
+                виробництва та завжди є затребуваною. За кордоном працівник
+                подібної сфери може цілком розраховувати на хорошу зарплату.
               </p>
-              <a href="" class="scope-of-work-more-link">детальніше</a>
+              <a
+                href=""
+                class="scope-of-work-more-link js-open-modal"
+                data-modal="food-production-modal"
+                >детальніше</a
+              >
             </li>
             <li class="scope-of-work-item">
               <img
@@ -215,13 +260,21 @@
                 alt="scope-logistics"
                 class="scope-of-work-img"
               />
-              <h3 class="scope-of-work-name">Transport & Logistics</h3>
-              <p class="scope-of-work-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                quam quidem eligendi dolore odio, dolorem, saepe expedita error
-                repellendus obcaecati architecto eaque possimus deleniti?
+              <h3 class="article-title scope-of-work-name">
+                Transport & Logistics
+              </h3>
+              <p class="article-description scope-of-work-description">
+                Транспортування та логістика є невід'ємною частиною кожної
+                міжнародної компанії саме через це досвідченні водії мають
+                надзвичайну можливість працювати та подорожувати отримуючи при
+                цьому високий заробіток.
               </p>
-              <a href="" class="scope-of-work-more-link">детальніше</a>
+              <a
+                href=""
+                class="scope-of-work-more-link js-open-modal"
+                data-modal="transport-and-logistic-modal"
+                >детальніше</a
+              >
             </li>
             <li class="scope-of-work-item">
               <img
@@ -229,42 +282,60 @@
                 alt="scope-construction"
                 class="scope-of-work-img"
               />
-              <h3 class="scope-of-work-name">Constructions</h3>
-              <p class="scope-of-work-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                quam quidem eligendi dolore odio, dolorem, saepe expedita error
-                repellendus obcaecati architecto eaque possimus deleniti?
+              <h3 class="article-title scope-of-work-name">Constructions</h3>
+              <p class="article-description scope-of-work-description">
+                Повсякденно у тисячах міст за кордоном будуються нові та
+                реставруються старі будівлі, дороги, пам'ятки, музеї. Сфера
+                будівництва в високорозвинутих країнах завжди потребує
+                спеціалістів та на вигідних умовах забезпечить кожного хто має
+                хист до створення нових структур...
               </p>
-              <a href="" class="scope-of-work-more-link">детальніше</a>
+              <a
+                href=""
+                class="scope-of-work-more-link js-open-modal"
+                data-modal="constructions-modal"
+                >детальніше</a
+              >
             </li>
             <li class="scope-of-work-item">
               <img
-                src="./images/scope-medicine.png"
+                src="./images/hospitality.jpg"
                 alt="scope-medicine"
                 class="scope-of-work-img"
               />
-              <h3 class="scope-of-work-name">Medicine</h3>
-              <p class="scope-of-work-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                quam quidem eligendi dolore odio, dolorem, saepe expedita error
-                repellendus obcaecati architecto eaque possimus deleniti?
+              <h3 class="scope-of-work-name article-title">Hospitality</h3>
+              <p class="article-description scope-of-work-description">
+                У сучасних умовах постійно зростає інтерес до індустрії
+                гостинності, зокрема до готельно-ресторанного бізнесу. Сфера
+                послуг постійно потребує нових кадрів, тому фахівець в галузі
+                готельного-ресторанного бізнесу – один з найзатребуваніших,
+                найпрестижніших і найбільш високооплачуваних спеціалістів.
               </p>
-              <a href="" class="scope-of-work-more-link">детальніше</a>
+              <a
+                href=""
+                class="scope-of-work-more-link js-open-modal"
+                data-modal="hospitality-modal"
+                >детальніше</a
+              >
             </li>
           </ul>
         </div>
       </section>
       <section class="section-how-we-work">
         <div class="how-we-work-wrapper">
-          <h2 class="how-we-work-title">як ми працюємо</h2>
+          <h2 class="sections-title how-we-work-title" id="how-we-work">
+            як ми працюємо
+          </h2>
           <ul class="how-we-work-list">
             <li class="how-we-work-item">
               <div class="how-we-work-counter-wrapper">
                 <p class="step">01</p>
-                <p class="step-of">/08</p>
+                <p class="step-of">/06</p>
               </div>
-              <h3 class="how-we-work-step-name">Підбираємо програму</h3>
-              <p class="how-we-work-step-description">
+              <h3 class="article-title how-we-work-step-name">
+                Підбираємо програму
+              </h3>
+              <p class="article-description">
                 Є десятки варіантів і програм. Ми виберемо те, що найбільше
                 підходить по вашій кваліфікації, термінам, очікуванням і
                 бюджету.
@@ -273,10 +344,12 @@
             <li class="how-we-work-item">
               <div class="how-we-work-counter-wrapper">
                 <p class="step">02</p>
-                <p class="step-of">/08</p>
+                <p class="step-of">/06</p>
               </div>
-              <h3 class="how-we-work-step-name">Підписуємо догвовір</h3>
-              <p class="how-we-work-step-description">
+              <h3 class="article-title how-we-work-step-name">
+                Підписуємо догвовір
+              </h3>
+              <p class="article-description">
                 Ви студент, їдете на стажування - підписавши договір про
                 офіційне оформлення в навчальному закладі. Якщо це професійна
                 імміграція - підписуємо договір і оплачуємо послуги
@@ -286,12 +359,12 @@
             <li class="how-we-work-item">
               <div class="how-we-work-counter-wrapper">
                 <p class="step">03</p>
-                <p class="step-of">/08</p>
+                <p class="step-of">/06</p>
               </div>
-              <h3 class="how-we-work-step-name">
+              <h3 class="article-title how-we-work-step-name">
                 Збираємо та подаємо документи
               </h3>
-              <p class="how-we-work-step-description">
+              <p class="article-description">
                 Разом підготуємо і подаємо пакет документів, при необхідності
                 переведемо і легалізували їх. Якщо ви студент навчального
                 закладу, з яким у нас підписаний договір - організаційні питання
@@ -301,57 +374,37 @@
             <li class="how-we-work-item">
               <div class="how-we-work-counter-wrapper">
                 <p class="step">04</p>
-                <p class="step-of">/08</p>
+                <p class="step-of">/06</p>
               </div>
-              <h3 class="how-we-work-step-name">Проміжний результат</h3>
-              <p class="how-we-work-step-description">
-                Отримуєте договір на навчання або стажування з деталізацією всіх
-                умов. Оплачуєте необхідні збори.
-              </p>
-            </li>
-            <li class="how-we-work-item">
-              <div class="how-we-work-counter-wrapper">
-                <p class="step">05</p>
-                <p class="step-of">/08</p>
-              </div>
-              <h3 class="how-we-work-step-name">
+              <h3 class="article-title how-we-work-step-name">
                 Стежимо за процесом та добиваємося позитивного результату
               </h3>
-              <p class="how-we-work-step-description">
-                Контролюємо процес схвалення від відповідних відомств або
+              <p class="article-description">
+                Отримуєте договір на навчання або стажування з деталізацією всіх
+                умов. Контролюємо процес схвалення від відповідних відомств або
                 консульства. Якщо є якісь перешкоди, усуваємо їх. Отримуємо
                 результат - оплачуємо.
               </p>
             </li>
             <li class="how-we-work-item">
               <div class="how-we-work-counter-wrapper">
+                <p class="step">05</p>
+                <p class="step-of">/06</p>
+              </div>
+              <h3 class="article-title how-we-work-step-name">Супроводжуємо</h3>
+              <p class="article-description">
+                Оформимо візи, страховку. квитки і трансфер. Під час програми
+                ми, наші партнери і представники на зв'язку з вами з питань
+                інтеграції, реєстрації та адаптації.
+              </p>
+            </li>
+            <li class="how-we-work-item">
+              <div class="how-we-work-counter-wrapper">
                 <p class="step">06</p>
-                <p class="step-of">/08</p>
+                <p class="step-of">/06</p>
               </div>
-              <h3 class="how-we-work-step-name">Організовуємо переїзд</h3>
-              <p class="how-we-work-step-description">
-                Оформимо візи, страховку. квитки і трансфер. Консультуємо по
-                реєстраціях і адаптації на місці.
-              </p>
-            </li>
-            <li class="how-we-work-item">
-              <div class="how-we-work-counter-wrapper">
-                <p class="step">07</p>
-                <p class="step-of">/08</p>
-              </div>
-              <h3 class="how-we-work-step-name">Супроводжуємо</h3>
-              <p class="how-we-work-step-description">
-                Під час програми ми, наші партнери і представники на зв'язку з
-                вами з питань інтеграції, реєстрації та адаптації.
-              </p>
-            </li>
-            <li class="how-we-work-item">
-              <div class="how-we-work-counter-wrapper">
-                <p class="step">08</p>
-                <p class="step-of">/08</p>
-              </div>
-              <h3 class="how-we-work-step-name">Нові цілі</h3>
-              <p class="how-we-work-step-description">
+              <h3 class="article-title how-we-work-step-name">Нові цілі</h3>
+              <p class="article-description">
                 Крім досвіду і знань, отриманих під час наших програм часто
                 виникають нові цілі. Після навчання на практику, потім в іншу
                 країну, а можливо і отримання громадянства. Допоможемо
@@ -362,49 +415,1614 @@
           </ul>
         </div>
       </section>
-      <section class="section-comments">
+      <section class="section-comments rotate-line-after rotate-line-before">
         <div class="comments-wrapper">
-          <h2 class="comments-title">Відгуки</h2>
-          <div class="slide-wrapper">
-            <input type="button" class="slide-previous-btn" />
-            <div class="comments-context-wrapper">
-              <ul class="comments-list">
-                <li class="comments-item">
-                  <div class="comments-item-cover"></div>
-                  <img
-                    src="./images/person-test.png"
-                    alt="person"
-                    class="comments-person-avatar"
-                  />
-                  <p class="comments-person-name"></p>
-                  <p class="comments-person-comment"></p>
-                </li>
-                <li class="comments-item">
-                  <div class="comments-item-cover"></div>
-                  <img
-                    src="./images/person-test.png"
-                    alt="person"
-                    class="comments-person-avatar"
-                  />
-                  <p class="comments-person-name"></p>
-                  <p class="comments-person-comment"></p>
-                </li>
-                <li class="comments-item">
-                  <div class="comments-item-cover"></div>
-                  <img
-                    src="./images/person-test.png"
-                    alt="person"
-                    class="comments-person-avatar"
-                  />
-                  <p class="comments-person-name"></p>
-                  <p class="comments-person-comment"></p>
-                </li>
-              </ul>
+          <h2 class="sections-title comments-title">Відгуки наших клієнтів</h2>
+          <div class="slide-container">
+            <div class="my-slides fade active-slide">
+              <div class="comments-block-header-wrapper">
+                <img
+                  src="./images/person-test.png"
+                  alt="person"
+                  class="comments-person-avatar"
+                />
+                <div class="person-details">
+                  <blockquote class="quotes">
+                    <p class="quote-cntx">
+                      <q
+                        >Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatum eos iste beatae, accusantium
+                        necessitatibus, non repudiandae autem, tenetur enim
+                        earum suscipit sint quam ipsa? Saepe eius rem commodi
+                        id, consequuntur mollitia officiis, obcaecati
+                        exercitationem at nemo temporibus dolorem odit dicta.</q
+                      >
+                    </p>
+                    <cite class="quote-author">Name Surname</cite>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a href="" class="fb-social-link"
+                          ><img
+                            src="./images/icons/facebook-square-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="insta-social-link">
+                          <img
+                            src="./images/icons/instagram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="telegram-social-link"
+                          ><img
+                            src="./images/icons/telegram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
             </div>
-            <input type="button" class="slide-next-btn" />
+            <div class="my-slides fade">
+              <div class="comments-block-header-wrapper">
+                <img
+                  src="./images/person-test.png"
+                  alt="person"
+                  class="comments-person-avatar"
+                />
+                <div class="person-details">
+                  <blockquote class="quotes">
+                    <p class="quote-cntx">
+                      <q
+                        >Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatum eos iste beatae, accusantium
+                        necessitatibus, non repudiandae autem, tenetur enim
+                        earum suscipit sint quam ipsa? Saepe eius rem commodi
+                        id, consequuntur mollitia officiis, obcaecati
+                        exercitationem at nemo temporibus dolorem odit dicta.</q
+                      >
+                    </p>
+                    <cite class="quote-author">Name Surname</cite>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a href="" class="fb-social-link"
+                          ><img
+                            src="./images/icons/facebook-square-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="insta-social-link">
+                          <img
+                            src="./images/icons/instagram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="telegram-social-link"
+                          ><img
+                            src="./images/icons/telegram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="my-slides fade">
+              <div class="comments-block-header-wrapper">
+                <img
+                  src="./images/person-test.png"
+                  alt="person"
+                  class="comments-person-avatar"
+                />
+                <div class="person-details">
+                  <blockquote class="quotes">
+                    <p class="quote-cntx">
+                      <q
+                        >Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatum eos iste beatae, accusantium
+                        necessitatibus, non repudiandae autem, tenetur enim
+                        earum suscipit sint quam ipsa? Saepe eius rem commodi
+                        id, consequuntur mollitia officiis, obcaecati
+                        exercitationem at nemo temporibus dolorem odit dicta.</q
+                      >
+                    </p>
+                    <cite class="quote-author">Name Surname</cite>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a href="" class="fb-social-link"
+                          ><img
+                            src="./images/icons/facebook-square-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="insta-social-link">
+                          <img
+                            src="./images/icons/instagram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="telegram-social-link"
+                          ><img
+                            src="./images/icons/telegram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="my-slides fade">
+              <div class="comments-block-header-wrapper">
+                <img
+                  src="./images/person-test.png"
+                  alt="person"
+                  class="comments-person-avatar"
+                />
+                <div class="person-details">
+                  <blockquote class="quotes">
+                    <p class="quote-cntx">
+                      <q
+                        >Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatum eos iste beatae, accusantium
+                        necessitatibus, non repudiandae autem, tenetur enim
+                        earum suscipit sint quam ipsa? Saepe eius rem commodi
+                        id, consequuntur mollitia officiis, obcaecati
+                        exercitationem at nemo temporibus dolorem odit dicta.</q
+                      >
+                    </p>
+                    <cite class="quote-author">Name Surname</cite>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a href="" class="fb-social-link"
+                          ><img
+                            src="./images/icons/facebook-square-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="insta-social-link">
+                          <img
+                            src="./images/icons/instagram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="telegram-social-link"
+                          ><img
+                            src="./images/icons/telegram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <button class="ctrl-prev" onclick="plusSlide(-1)"></button>
+            <button class="ctrl-next" onclick="plusSlide(1)"></button>
+          </div>
+          <div class="slider-pagination">
+            <span class="slide-dot active" onclick="changeSlide(0)"></span>
+            <span class="slide-dot" onclick="changeSlide(1)"></span>
+            <span class="slide-dot" onclick="changeSlide(2)"></span>
+            <span class="slide-dot" onclick="changeSlide(3)"></span>
           </div>
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrapper">
+        <div class="contact-information">
+          <a href="#" class="logo-link">
+            <img
+              src="./images/uman-ag-logo.svg"
+              alt="logo"
+              class="logo-icon"
+              width="200px"
+              height="100px"
+            />
+          </a>
+          <address class="address cont-info">
+            м. Умань, вул. Європейська 11, п. індекс: 20-300
+          </address>
+          <p class="cont-info">
+            <a href="tel:[+380961664939]" class="phone-number"
+              >+38 (096) 166 49 39</a
+            >
+          </p>
+          <p class="cont-info">
+            <a href="email:[kolomiets1990@gmail.com]" class="email"
+              >kolomiets1990@gmail.com</a
+            >
+          </p>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="" class="fb-social-link"
+                ><img
+                  src="./images/icons/facebook-square-brands.svg"
+                  alt="facebook-link"
+                  width="24px"
+                  height="24px"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a href="" class="insta-social-link">
+                <img
+                  src="./images/icons/instagram-brands.svg"
+                  alt="facebook-link"
+                  width="24px"
+                  height="24px"
+                />
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="telegram-social-link"
+                ><img
+                  src="./images/icons/telegram-brands.svg"
+                  alt="facebook-link"
+                  width="24px"
+                  height="24px"
+              /></a>
+            </li>
+          </ul>
+          <p class="all-rights-reserved">
+            All rights reserved <spam class="uman-rights">UMan.ag© 2019 </spam>
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <h2 class="sections-title write-to-us">Напишіть нам</h2>
+          <div class="form-wrapper">
+            <form
+              action="https://formspree.io/kolomiets1990@gmail.com"
+              method="POST"
+              class="form"
+            >
+              <div class="contacts-inputs">
+                <input
+                  type="text"
+                  class="contact-input margin-right-for-inputs"
+                  id="id-name-surname"
+                  name="name"
+                  placeholder="Ім'я та Фамілія"
+                />
+                <input
+                  type="tel"
+                  class="contact-input margin-right-for-inputs"
+                  id="id-phone"
+                  name="phone"
+                  placeholder="Номер телефону"
+                />
+                <input
+                  type="email"
+                  class="contact-input"
+                  id="id-email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <textarea
+                  type="textarea"
+                  class="input-comments"
+                  id="id-comments"
+                  name="comments"
+                  placeholder="Ваш коментар"
+                ></textarea>
+              </div>
+              <div class="info-details">
+                <input type="submit" class="input-submit" value="відправити" />
+                <input
+                  type="checkbox"
+                  class="input-check-box"
+                  id="id-check-rights"
+                />
+                <label for="id-check-rights" class="label-check-box"
+                  >Підтверджую свою згоду на обробку особистих даних</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+
+    <div class="modal-overlay js-overlay-modal">
+      <!-- STUDY MODAL -->
+
+      <div class="modal service-modal" data-modal="study-modal">
+        <div class="service-modal-wrapper">
+          <h2 class="sections-title">Study Abroad</h2>
+          <p class="modal-description">
+            Ви зацікавлені отримати хороше робоче місце? Тоді краще зробити
+            вибір на користь вищої освіти за кордоном. Наш світ дуже швидко
+            розвивається, внаслідок чого постійно зростає і конкуренція на ринку
+            праці. Тому від кожної людини роботодавці очікують хороших знань в
+            сфері своєї роботи і високої кваліфікації. З огляду на те, що освіта
+            за кордоном має вже сформовані традиції, багато студентів,
+            піклуючись про своє подальше працевлаштування, вибирають саме його.
+            Крім цього, таке навчання дасть можливість не лише цікаво провести
+            час в університеті, але також спробувати себе в дослідницьких
+            проектах, побувати на стажуванні на відомих міжнародних
+            підприємствах.
+          </p>
+          <button class="close-modal js-close-modal"></button>
+          <div class="study-modal-wrapper">
+            <img
+              src="./images/study-abroad.jpeg"
+              alt="study"
+              class="study-img"
+            />
+            <div class="country-overlay">
+              <p class="variety-label">Програми:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+              </ul>
+              <p class="variety-label">Наші послуги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+                <li class="variety-item">Перелік:</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#footer" class="registry-btn js-close-modal service-btn"
+            >зареєструватись</a
+          >
+        </div>
+      </div>
+
+      <!-- WORK AND TRAINING MODAL -->
+
+      <div class="modal service-modal" data-modal="work-modal">
+        <div class="service-modal-wrapper">
+          <h2 class="sections-title">Work & Training</h2>
+          <p class="modal-description">
+            Українські фахівці/випускники ВУЗ-ів все частіше зіштовхуються з
+            проблемою неможливості знайти роботу. Тому сотні тисяч громадян
+            шукають варіанти працевлаштування за межами нашої країни. У той же
+            час в Європі спостерігається дефіцит трудових ресурсів, тому
+            українцям виявляється цілком реально знайти гідну роботу за
+            кордоном. Широкий світогляд, вміння орієнтуватися в
+            мультикультурному середовищі, швидко реагувати на зміни та знаходити
+            спільну мову будь з ким – якості, які не лише полегшують життя, а й
+            сприяють вашій кар’єрі. Стажування за кордоном – один із найкращих
+            способів їх розвинути, а заразом подивитися світ та завести нові
+            знайомства.
+          </p>
+          <button class="close-modal js-close-modal"></button>
+          <ul class="countries-list">
+            <li class="countries-item">
+              <img
+                src="./images/countries/germany.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">германія</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Напрямки робіт:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">- агрокультура</li>
+                  <li class="variety-item">- робота з тваринами</li>
+                  <li class="variety-item">- робота з квітами</li>
+                  <li class="variety-item">- робота з технікою на полі</li>
+                </ul>
+                <p class="variety-label">Ви отримаєте:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Дохід:</li>
+                  <li class="variety-item">Проживання:</li>
+                  <li class="variety-item">Харування:</li>
+                  <li class="variety-item">Додатково:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Мова:</li>
+                  <li class="variety-item">Досвід:</li>
+                  <li class="variety-item">Статус:</li>
+                  <li class="variety-item">Інше:</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <img
+                src="./images/countries/denmark.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">данія</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Напрямки робіт:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">- агрокультура</li>
+                  <li class="variety-item">- робота з тваринами</li>
+                  <li class="variety-item">- робота з квітами</li>
+                  <li class="variety-item">- робота з технікою на полі</li>
+                </ul>
+                <p class="variety-label">Ви отримаєте:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Дохід:</li>
+                  <li class="variety-item">Проживання:</li>
+                  <li class="variety-item">Харування:</li>
+                  <li class="variety-item">Додатково:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Мова:</li>
+                  <li class="variety-item">Досвід:</li>
+                  <li class="variety-item">Статус:</li>
+                  <li class="variety-item">Інше:</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <img
+                src="./images/countries/usa.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">сша</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Напрямки робіт:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">- агрокультура</li>
+                  <li class="variety-item">- робота з тваринами</li>
+                  <li class="variety-item">- робота з квітами</li>
+                  <li class="variety-item">- робота з технікою на полі</li>
+                </ul>
+                <p class="variety-label">Ви отримаєте:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Дохід:</li>
+                  <li class="variety-item">Проживання:</li>
+                  <li class="variety-item">Харування:</li>
+                  <li class="variety-item">Додатково:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Мова:</li>
+                  <li class="variety-item">Досвід:</li>
+                  <li class="variety-item">Статус:</li>
+                  <li class="variety-item">Інше:</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <img
+                src="./images/countries/irish.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">ірладнія</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Напрямки робіт:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">- агрокультура</li>
+                  <li class="variety-item">- робота з тваринами</li>
+                  <li class="variety-item">- робота з квітами</li>
+                  <li class="variety-item">- робота з технікою на полі</li>
+                </ul>
+                <p class="variety-label">Ви отримаєте:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Дохід:</li>
+                  <li class="variety-item">Проживання:</li>
+                  <li class="variety-item">Харування:</li>
+                  <li class="variety-item">Додатково:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Мова:</li>
+                  <li class="variety-item">Досвід:</li>
+                  <li class="variety-item">Статус:</li>
+                  <li class="variety-item">Інше:</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <img
+                src="./images/countries/sweden.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">швеція</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Напрямки робіт:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">- агрокультура</li>
+                  <li class="variety-item">- робота з тваринами</li>
+                  <li class="variety-item">- робота з квітами</li>
+                  <li class="variety-item">- робота з технікою на полі</li>
+                </ul>
+                <p class="variety-label">Ви отримаєте:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Дохід:</li>
+                  <li class="variety-item">Проживання:</li>
+                  <li class="variety-item">Харування:</li>
+                  <li class="variety-item">Додатково:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Мова:</li>
+                  <li class="variety-item">Досвід:</li>
+                  <li class="variety-item">Статус:</li>
+                  <li class="variety-item">Інше:</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item">
+              <img
+                src="./images/countries/england.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">англія</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Напрямки робіт:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">- агрокультура</li>
+                  <li class="variety-item">- робота з тваринами</li>
+                  <li class="variety-item">- робота з квітами</li>
+                  <li class="variety-item">- робота з технікою на полі</li>
+                </ul>
+                <p class="variety-label">Ви отримаєте:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Дохід:</li>
+                  <li class="variety-item">Проживання:</li>
+                  <li class="variety-item">Харування:</li>
+                  <li class="variety-item">Додатково:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Мова:</li>
+                  <li class="variety-item">Досвід:</li>
+                  <li class="variety-item">Статус:</li>
+                  <li class="variety-item">Інше:</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#footer" class="registry-btn js-close-modal service-btn"
+            >зареєструватись</a
+          >
+        </div>
+      </div>
+
+      <!-- IMMIGRATION MODAL -->
+
+      <div class="modal service-modal" data-modal="immigration-modal">
+        <div class="service-modal-wrapper">
+          <h2 class="sections-title">immigration</h2>
+          <p class="modal-description">
+            «Добре там, де нас немає» - думають багато людей та роками живуть на
+            одному й тому ж місці. Але світ занадто різноманітний, щоб все життя
+            провести в одній країні. Кажуть, не місце прикрашає людину, а людина
+            місце. Але є місця, де жити і працювати по-справжньому комфортно. З
+            нашим багаторічним досвідом ми допоможемо Вам як переїхати так і
+            влаштуватися в цих країнах.
+          </p>
+          <button class="close-modal js-close-modal"></button>
+          <ul class="countries-list immigration-list">
+            <li class="countries-item immigration-item">
+              <img
+                src="./images/countries/canada.jpg"
+                alt=""
+                class="country-img"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">канада</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Програми:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                </ul>
+                <p class="variety-label">Наші послуги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                </ul>
+              </div>
+            </li>
+            <li class="countries-item immigration-item">
+              <img
+                src="./images/countries/australia.jpg"
+                alt=""
+                class="country-img"
+                width="300px"
+                height="400px"
+              />
+              <div class="item-cover-gradient">
+                <p class="country-name">австралія</p>
+              </div>
+              <div class="country-overlay">
+                <p class="variety-label">Програми:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                </ul>
+                <p class="variety-label">Вимоги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                </ul>
+                <p class="variety-label">Наші послуги:</p>
+                <ul class="variety-list">
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                  <li class="variety-item">Перелік:</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#footer" class="registry-btn js-close-modal service-btn"
+            >зареєструватись</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- AGRICULTURE MODULE -->
+
+    <div class="modal scope-of-work-modal" data-modal="agriculture-modal">
+      <div class="service-modal-wrapper">
+        <h2 class="sections-title">AGRICULTURE</h2>
+        <p class="modal-description scope-description">
+          Галузь сільського господарства та ветеринарії дозволяє вибирати з
+          безлічі різних опцій працевлаштування та, важливо пам'ятати, що хороші
+          професіонали цієї сфери затребувані практично в будь-якій країні
+          світу. Крім того, з отриманням досвіду, наявні знання можуть стати в
+          нагоді для організації власного фермерського господарства.
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <ul class="countries-list">
+          <li class="countries-item">
+            <img
+              src="./images/pigs.jpeg"
+              alt="pigs"
+              class="country-img"
+              width="300px"
+              height="400px"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">свинарство</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- запліднення</li>
+                <li class="variety-item">- догляд</li>
+                <li class="variety-item">- катсрація</li>
+                <li class="variety-item">- годування</li>
+                <li class="variety-item">- забій</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/cows.jpeg"
+              alt="cows"
+              class="country-img"
+              width="300px"
+              height="400px"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">скотарство</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- запліднення</li>
+                <li class="variety-item">- догляд</li>
+                <li class="variety-item">- катсрація</li>
+                <li class="variety-item">- годування</li>
+                <li class="variety-item">- забій</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/horse.jpg"
+              alt="horse"
+              class="country-img"
+              width="300px"
+              height="400px"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">коні</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- запліднення</li>
+                <li class="variety-item">- догляд</li>
+                <li class="variety-item">- годування</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/birds.jpg"
+              alt="birds"
+              class="country-img"
+              width="300px"
+              height="400px"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">птиці</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- догляд</li>
+                <li class="variety-item">- годування</li>
+                <li class="variety-item">- забій</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/tractors.jpg"
+              alt="tractors"
+              class="country-img"
+              width="300px"
+              height="400px"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">робота з технікою</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- агрокультура</li>
+                <li class="variety-item">- робота з тваринами</li>
+                <li class="variety-item">- робота з квітами</li>
+                <li class="variety-item">- робота з технікою на полі</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/field.jpg"
+              alt="field"
+              class="country-img"
+              width="300px"
+              height="400px"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">робота на полі</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- агрокультура</li>
+                <li class="variety-item">- робота з тваринами</li>
+                <li class="variety-item">- робота з квітами</li>
+                <li class="variety-item">- робота з технікою на полі</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <!-- HORTICULTURE MODAL -->
+
+    <div class="modal scope-of-work-modal" data-modal="horticulture-modal">
+      <div class="service-modal-wrapper">
+        <h2 class="sections-title">HORTICULTURE</h2>
+        <p class="modal-description scope-description">
+          Садівництво - це унікальна та високоприбуткова професія. Якщо Вам
+          подобається вирощуввати, доглядати та збирати рослини або фрукти -
+          робота/стажуваня в країнах Європи а також США і Канаді стануть великим
+          прибутком та корисним досвідом
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <ul class="countries-list">
+          <li class="countries-item">
+            <img
+              src="./images/horticulture/fruits.jpeg"
+              alt="pigs"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">ягоди</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/horticulture/grapes.jpg"
+              alt="birds"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">виноградники</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/horticulture/flowers.jpg"
+              alt="tractors"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">квіти</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <!-- FOOD PRODUCTION -->
+
+    <div class="modal" data-modal="food-production-modal">
+      <div class="service-modal-wrapper">
+        <h2 class="sections-title">FOOD PRODUCTION</h2>
+        <p class="modal-description scope-description">
+          Харчова промисловість є однією з найголовніших галузей виробництва та
+          завжди є затребуваною. Вона не тільки забезпечує людей необхідними
+          ресурсами для життя, але ще і позитивно впливає на динаміку
+          економічного зростання. За кордоном працівник подібної сфери може
+          цілком розраховувати на хорошу зарплату.
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <ul class="countries-list">
+          <li class="countries-item">
+            <img
+              src="./images/food-production/conditors.jpeg"
+              alt="pigs"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">кондитер</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/food-production/wine.jpg"
+              alt="birds"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">виноробство</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/food-production/meat.jpg"
+              alt="tractors"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">м'ясна промисловість</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item item-to-grow">
+            <img
+              src="./images/food-production/fish.jpg"
+              alt="tractors"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">рибна промисловість</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item item-to-grow">
+            <img
+              src="./images/food-production/milk.jpg"
+              alt="tractors"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">молочна промисловість</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <!-- TRANSPORT AND LOGISTIC MODAL-->
+
+    <div class="modal" data-modal="transport-and-logistic-modal">
+      <div class="service-modal-wrapper">
+        <h2 class="sections-title">TRANSPORT & LOGISTIC</h2>
+        <p class="modal-description scope-description">
+          Транспортування та логістика є невід'ємною частиною кожної міжнародної
+          компанії саме через це досвідченні водії мають надзвичайну можливість
+          працювати та подорожувати отримуючи при цьому високий заробіток.
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <ul class="countries-list">
+          <li class="modal-transport-scope-item">
+            <img
+              src="./images/transport/usa-canada.jpg"
+              alt="pigs"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">США<br />КАНАДА</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-transport-scope-item">
+            <img
+              src="./images/transport/europe.jpg"
+              alt="birds"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">ЄВПРОПА</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <!-- CONSTRUCTIONS -->
+
+    <div class="modal" data-modal="constructions-modal">
+      <div class="service-modal-wrapper">
+        <h2 class="sections-title">CONSTRUCTIONS</h2>
+        <p class="modal-description scope-description">
+          Повсякденно у тисячах міст за кордоном будуються нові та реставруються
+          старі будівлі, дороги, пам'ятки, музеї. Сфера будівництва в
+          високорозвинутих країнах завжди потребує спеціалістів та на вигідних
+          умовах забезпечить кожного хто має хист до створення нових структур.
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <ul class="countries-list">
+          <li class="modal-transport-scope-item">
+            <img
+              src="./images/constructions/technology.jpg"
+              alt="technology"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">РОБОТА З ТЕХНІКОЮ</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-transport-scope-item">
+            <img
+              src="./images/constructions/builders.jpg"
+              alt="builders"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">БУДІВЕЛЬНИКИ</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <!-- HOSPITALITY -->
+
+    <div class="modal" data-modal="hospitality-modal">
+      <div class="service-modal-wrapper">
+        <h2 class="sections-title">HOSPITALITY</h2>
+        <p class="modal-description scope-description">
+          У сучасних умовах постійно зростає інтерес до індустрії гостинності,
+          зокрема до готельно-ресторанного бізнесу. Сфера послуг постійно
+          потребує нових кадрів, тому фахівець в галузі готельного-ресторанного
+          бізнесу – один з найзатребуваніших, найпрестижніших і найбільш
+          високооплачуваних спеціалістів.
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <ul class="countries-list">
+          <li class="countries-item">
+            <img
+              src="./images/hospitality/cooker.jpg"
+              alt="cooker"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">кухар</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/hospitality/barman.jpg"
+              alt="barman"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">бармен</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item">
+            <img
+              src="./images/hospitality/cleaning.jpg"
+              alt="cleaning"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">прибиральник кімнат</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item item-to-grow">
+            <img
+              src="./images/hospitality/service-man.jpg"
+              alt="service"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">офіціант</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="countries-item item-to-grow">
+            <img
+              src="./images/hospitality/receptionist.jpg"
+              alt="receptionist"
+              class="country-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">рецепціоніст</p>
+            </div>
+            <div class="country-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
