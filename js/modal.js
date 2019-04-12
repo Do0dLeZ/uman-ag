@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     closeBtn = document.querySelectorAll(".js-close-modal");
 
   const wrapper = document.querySelector(".wrapper");
+  const body = document.querySelector(".body");
 
   modalBtn.forEach(item => {
     item.addEventListener("click", function(e) {
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         );
       modalElem.classList.add("active");
       overlay.classList.add("active");
-      wrapper.classList.add(".modal-open");
+      body.classList.add("modal-open");
     });
   });
 
@@ -51,24 +52,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
       parentModal.classList.remove("active");
       overlay.classList.remove("active");
+      body.classList.remove("modal-open");
     });
   });
 
-  // document.body.addEventListener(
-  //   "keyup",
-  //   function(e) {
-  //     var key = e.keyCode;
+  document.body.addEventListener(
+    "keyup",
+    function(e) {
+      var key = e.keyCode;
 
-  //     if (key == 27) {
-  //       document.querySelector(".modal.active").classList.remove("active");
-  //       document.querySelector(".overlay").classList.remove("active");
-  //     }
-  //   },
-  //   false
-  // );
+      if (key == 27) {
+        document.querySelector(".modal.active").classList.remove("active");
+        document.querySelector(".overlay").classList.remove("active");
+        body.classList.remove("modal-open");
+      }
+    },
+    false
+  );
 
-  // overlay.addEventListener("click", function() {
-  //   document.querySelector(".modal.active").classList.remove("active");
-  //   this.classList.remove("active");
-  // });
+  overlay.addEventListener("click", function(e) {
+    if (e.target == document.querySelector(".modal-overlay")) {
+      document.querySelector(".modal.active").classList.remove("active");
+      document.querySelector(".modal-overlay").classList.remove("active");
+      body.classList.remove("modal-open");
+    }
+  });
 });

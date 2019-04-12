@@ -187,6 +187,11 @@
   color: white;
 }
 
+.why-us-description {
+  font-family: "Ubuntu";
+  color: var(--background-color-work-scope);
+}
+
 .article-title {
   font-weight: 700;
   font-size: 22px;
@@ -674,7 +679,7 @@
   visibility: hidden;
   width: 80%;
   max-height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   position: fixed;
   top: 50%;
@@ -689,8 +694,24 @@
   transition: 0.3s all;
 }
 
+.modal-wrapper {
+  max-width: 1100px;
+  height: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.service-modal {
+  background-color: var(--background-color-why-us);
+}
+
+.scope-of-work-modal {
+  background-color: var(--background-color-work-scope);
+}
+
 .close-modal {
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 15px;
   width: 45px;
@@ -704,27 +725,18 @@
   border: none;
 }
 
+.close-modal.orange {
+  background-image: url("../images/icons/close-solid-orange.svg");
+}
+
 .modal.active,
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
-.wrapper.modal-open {
-  position: fixed;
-}
-
-.service-modal {
-  background-color: var(--background-color-why-us);
-}
-
-.scope-of-work-modal {
-  background-color: var(--background-color-work-scope);
-}
-
-.service-modal-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
+.modal-open {
+  overflow: hidden;
 }
 
 .modal-description {
@@ -735,29 +747,7 @@
   font-size: 18px;
 }
 
-.scope-description {
-  color: var(--background-color-why-us);
-}
-
-/* STUDY MODAL */
-
-.study-modal-wrapper {
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  position: relative;
-  margin-bottom: 35px;
-}
-
-.study-img {
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-}
-
-/* WORK AND TRAINING MODAL */
-
-.countries-list {
+.modal-categories-list {
   position: relative;
   list-style: none;
   display: flex;
@@ -766,23 +756,19 @@
   padding-bottom: 35px;
 }
 
-.countries-item {
+.modal-categories-item {
   width: 300px;
   height: 400px;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin-bottom: 35px;
 }
 
-.modal-transport-scope-item {
-  width: 45%;
-  height: 400px;
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 35px;
+.scope-description {
+  color: var(--background-color-why-us);
 }
 
-.countries-item:hover,
+.modal-categories-item:hover,
 .modal-transport-scope-item:hover {
   transform: scale(1.1);
 }
@@ -800,7 +786,7 @@
   );
 }
 
-.country-overlay {
+.modal-item-overlay {
   background-color: var(--background-color-overlay-invisible);
   position: absolute;
   top: 0;
@@ -812,26 +798,96 @@
   font-family: "Ubuntu";
 }
 
-.countries-item:hover .country-overlay,
-.study-modal-wrapper:hover .country-overlay,
-.modal-transport-scope-item:hover .country-overlay {
+.modal-item-description {
+  position: absolute;
+  width: 100%;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.study-context-wrapper {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.modal-transport-scope-item {
+  width: 45%;
+  height: 400px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 35px;
+}
+
+.modal-categories-item:hover .modal-item-overlay,
+.study-context-wrapper:hover .modal-item-overlay,
+.modal-transport-scope-item:hover .modal-item-overlay {
   background-color: var(--background-color-overlay-visible);
   visibility: visible;
 }
 
-.variety-label {
-  font-size: 20px;
-}
-
 .variety-list {
+  position: absolute;
+  display: block;
+  top: 10%;
+  left: 10%;
   list-style: none;
   text-align: start;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.country-image {
-  object-fit: contain;
+.countries-list-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.countries-list-wrapper-for-study {
+  padding: 0 25px;
+}
+
+.country-icons-label {
+  margin-bottom: 15px;
+}
+
+.countries-icons-list {
+  list-style: none;
+  text-align: start;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.countries-icons-item {
+  min-width: 60px;
+  margin-bottom: 15px;
+}
+
+.country-icon-for-study {
+  min-width: 120px;
+}
+
+.flags-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.country-icon-name {
+  font-family: "Ubuntu";
+  color: white;
+  font-size: 14px;
+  text-align: center;
 }
 
 .country-name {
@@ -845,16 +901,10 @@
   color: white;
 }
 
-/* IMMIGRATION MODAL ++++ */
-
-.country-img {
+.modal-item-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.immigration-list:first-child {
-  margin-right: 25px;
 }
 
 .immigration-item {
@@ -863,7 +913,6 @@
 
 li + .item-to-grow {
   width: 45%;
-  /* flex-grow: 2; */
 }
 
 .registry-btn,

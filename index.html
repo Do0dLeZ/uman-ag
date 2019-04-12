@@ -15,7 +15,7 @@
       Імміграція | Навчання
     </title>
   </head>
-  <body>
+  <body class="body">
     <div class="wrapper">
       <div class="header-banner-wrapper">
         <header class="header">
@@ -51,7 +51,7 @@
         <div class="header-title-wrapper">
           <h1 class="main-title">
             Прибуткова робота та стажування у найрозвинутіших країнах світу з
-            можливістю подальшої імміграції
+            можливістю імміграції
           </h1>
           <h2 class="main-description">
             Вже сьогодні саме для Вас ми маємо екслюзивні пропозиції щодо
@@ -69,7 +69,7 @@
             <li class="why-us-item">
               <p class="why-us-number">01.</p>
               <p class="article-title">надійна репутація</p>
-              <p class="article-description">
+              <p class="why-us-description">
                 Наша команда з 1999 року "спеціалізується на робочих,
                 навачальних та імміграційних програмах до розвинуттх країн
                 світу..."
@@ -78,7 +78,7 @@
             <li class="why-us-item">
               <p class="why-us-number">02.</p>
               <p class="article-title">легальність програм</p>
-              <p class="article-description">
+              <p class="why-us-description">
                 Працюємо у відповідності з законодавством України. Співпрацюємо
                 лише з акредитованими імміграційними консультантами. Маємо
                 налагоджені тісні, перевірені зв’язки з закордонними
@@ -90,7 +90,7 @@
               <p class="article-title">
                 індивідуальний підхід
               </p>
-              <p class="article-description">
+              <p class="why-us-description">
                 Під час консультації, провідні спеціалісти підберуть
                 найвигідніші країну, напрямок та програму базуючись на Ваших
                 вимогах
@@ -99,7 +99,7 @@
             <li class="why-us-item">
               <p class="why-us-number">04.</p>
               <p class="article-title">довіра</p>
-              <p class="article-description">
+              <p class="why-us-description">
                 Скориставшись нашими послугами, Ви станете одним з понад 2 000
                 інших людей які в даний момент працевлаштовані або кардинально
                 змінили своє життя на краще завдяки нам, іммігрувавши до
@@ -109,7 +109,7 @@
             <li class="why-us-item">
               <p class="why-us-number">05.</p>
               <p class="article-title">повний супровід</p>
-              <p class="article-description">
+              <p class="why-us-description">
                 З початку складання договору, ми максимально забезпечимо Вам
                 підтримку починаючи від збору документів до очікуваного
                 результату
@@ -751,6 +751,7 @@
                   type="checkbox"
                   class="input-check-box"
                   id="id-check-rights"
+                  checked
                 />
                 <label for="id-check-rights" class="label-check-box"
                   >Підтверджую свою згоду на обробку особистих даних</label
@@ -765,65 +766,10 @@
     <!-- Modals -->
 
     <div class="modal-overlay js-overlay-modal">
-      <!-- STUDY MODAL -->
-
-      <div class="modal service-modal" data-modal="study-modal">
-        <div class="service-modal-wrapper">
-          <h2 class="sections-title">Study Abroad</h2>
-          <p class="modal-description">
-            Ви зацікавлені отримати хороше робоче місце? Тоді краще зробити
-            вибір на користь вищої освіти за кордоном. Наш світ дуже швидко
-            розвивається, внаслідок чого постійно зростає і конкуренція на ринку
-            праці. Тому від кожної людини роботодавці очікують хороших знань в
-            сфері своєї роботи і високої кваліфікації. З огляду на те, що освіта
-            за кордоном має вже сформовані традиції, багато студентів,
-            піклуючись про своє подальше працевлаштування, вибирають саме його.
-            Крім цього, таке навчання дасть можливість не лише цікаво провести
-            час в університеті, але також спробувати себе в дослідницьких
-            проектах, побувати на стажуванні на відомих міжнародних
-            підприємствах.
-          </p>
-          <button class="close-modal js-close-modal"></button>
-          <div class="study-modal-wrapper">
-            <img
-              src="./images/study-abroad.jpeg"
-              alt="study"
-              class="study-img"
-            />
-            <div class="country-overlay">
-              <p class="variety-label">Програми:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-              </ul>
-              <p class="variety-label">Наші послуги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-                <li class="variety-item">Перелік:</li>
-              </ul>
-            </div>
-          </div>
-          <a href="#footer" class="registry-btn js-close-modal service-btn"
-            >зареєструватись</a
-          >
-        </div>
-      </div>
-
       <!-- WORK AND TRAINING MODAL -->
 
       <div class="modal service-modal" data-modal="work-modal">
-        <div class="service-modal-wrapper">
+        <div class="modal-wrapper">
           <h2 class="sections-title">Work & Training</h2>
           <p class="modal-description">
             Українські фахівці/випускники ВУЗ-ів все частіше зіштовхуються з
@@ -839,214 +785,128 @@
             знайомства.
           </p>
           <button class="close-modal js-close-modal"></button>
-          <ul class="countries-list">
-            <li class="countries-item">
+          <ul class="modal-categories-list">
+            <li class="modal-categories-item">
               <img
                 src="./images/countries/germany.jpg"
                 alt=""
-                class="country-img"
-                width="300px"
-                height="400px"
+                class="modal-item-img"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">германія</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Напрямки робіт:</p>
+              <div class="modal-item-overlay">
+                <p class="variety-label">Напрямки:</p>
                 <ul class="variety-list">
                   <li class="variety-item">- агрокультура</li>
                   <li class="variety-item">- робота з тваринами</li>
                   <li class="variety-item">- робота з квітами</li>
                   <li class="variety-item">- робота з технікою на полі</li>
                 </ul>
-                <p class="variety-label">Ви отримаєте:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Дохід:</li>
-                  <li class="variety-item">Проживання:</li>
-                  <li class="variety-item">Харування:</li>
-                  <li class="variety-item">Додатково:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Мова:</li>
-                  <li class="variety-item">Досвід:</li>
-                  <li class="variety-item">Статус:</li>
-                  <li class="variety-item">Інше:</li>
-                </ul>
               </div>
             </li>
-            <li class="countries-item">
+            <li class="modal-categories-item">
               <img
                 src="./images/countries/denmark.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
                 width="300px"
                 height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">данія</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Напрямки робіт:</p>
+              <div class="modal-item-overlay">
+                <p class="variety-label">Напрямки:</p>
                 <ul class="variety-list">
                   <li class="variety-item">- агрокультура</li>
                   <li class="variety-item">- робота з тваринами</li>
                   <li class="variety-item">- робота з квітами</li>
                   <li class="variety-item">- робота з технікою на полі</li>
                 </ul>
-                <p class="variety-label">Ви отримаєте:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Дохід:</li>
-                  <li class="variety-item">Проживання:</li>
-                  <li class="variety-item">Харування:</li>
-                  <li class="variety-item">Додатково:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Мова:</li>
-                  <li class="variety-item">Досвід:</li>
-                  <li class="variety-item">Статус:</li>
-                  <li class="variety-item">Інше:</li>
-                </ul>
               </div>
             </li>
-            <li class="countries-item">
+            <li class="modal-categories-item">
               <img
                 src="./images/countries/usa.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
                 width="300px"
                 height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">сша</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Напрямки робіт:</p>
+              <div class="modal-item-overlay">
+                <p class="variety-label">Напрямки:</p>
                 <ul class="variety-list">
                   <li class="variety-item">- агрокультура</li>
                   <li class="variety-item">- робота з тваринами</li>
                   <li class="variety-item">- робота з квітами</li>
                   <li class="variety-item">- робота з технікою на полі</li>
                 </ul>
-                <p class="variety-label">Ви отримаєте:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Дохід:</li>
-                  <li class="variety-item">Проживання:</li>
-                  <li class="variety-item">Харування:</li>
-                  <li class="variety-item">Додатково:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Мова:</li>
-                  <li class="variety-item">Досвід:</li>
-                  <li class="variety-item">Статус:</li>
-                  <li class="variety-item">Інше:</li>
-                </ul>
               </div>
             </li>
-            <li class="countries-item">
+            <li class="modal-categories-item">
               <img
                 src="./images/countries/irish.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
                 width="300px"
                 height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">ірладнія</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Напрямки робіт:</p>
+              <div class="modal-item-overlay">
+                <p class="variety-label">Напрямки:</p>
                 <ul class="variety-list">
                   <li class="variety-item">- агрокультура</li>
                   <li class="variety-item">- робота з тваринами</li>
                   <li class="variety-item">- робота з квітами</li>
                   <li class="variety-item">- робота з технікою на полі</li>
                 </ul>
-                <p class="variety-label">Ви отримаєте:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Дохід:</li>
-                  <li class="variety-item">Проживання:</li>
-                  <li class="variety-item">Харування:</li>
-                  <li class="variety-item">Додатково:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Мова:</li>
-                  <li class="variety-item">Досвід:</li>
-                  <li class="variety-item">Статус:</li>
-                  <li class="variety-item">Інше:</li>
-                </ul>
               </div>
             </li>
-            <li class="countries-item">
+            <li class="modal-categories-item">
               <img
                 src="./images/countries/sweden.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
                 width="300px"
                 height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">швеція</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Напрямки робіт:</p>
+              <div class="modal-item-overlay">
+                <p class="variety-label">Напрямки:</p>
                 <ul class="variety-list">
                   <li class="variety-item">- агрокультура</li>
                   <li class="variety-item">- робота з тваринами</li>
                   <li class="variety-item">- робота з квітами</li>
                   <li class="variety-item">- робота з технікою на полі</li>
                 </ul>
-                <p class="variety-label">Ви отримаєте:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Дохід:</li>
-                  <li class="variety-item">Проживання:</li>
-                  <li class="variety-item">Харування:</li>
-                  <li class="variety-item">Додатково:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Мова:</li>
-                  <li class="variety-item">Досвід:</li>
-                  <li class="variety-item">Статус:</li>
-                  <li class="variety-item">Інше:</li>
-                </ul>
               </div>
             </li>
-            <li class="countries-item">
+            <li class="modal-categories-item">
               <img
                 src="./images/countries/england.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
                 width="300px"
                 height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">англія</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Напрямки робіт:</p>
+              <div class="modal-item-overlay">
+                <p class="variety-label">Напрямки:</p>
                 <ul class="variety-list">
                   <li class="variety-item">- агрокультура</li>
                   <li class="variety-item">- робота з тваринами</li>
                   <li class="variety-item">- робота з квітами</li>
                   <li class="variety-item">- робота з технікою на полі</li>
-                </ul>
-                <p class="variety-label">Ви отримаєте:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Дохід:</li>
-                  <li class="variety-item">Проживання:</li>
-                  <li class="variety-item">Харування:</li>
-                  <li class="variety-item">Додатково:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Мова:</li>
-                  <li class="variety-item">Досвід:</li>
-                  <li class="variety-item">Статус:</li>
-                  <li class="variety-item">Інше:</li>
                 </ul>
               </div>
             </li>
@@ -1060,7 +920,7 @@
       <!-- IMMIGRATION MODAL -->
 
       <div class="modal service-modal" data-modal="immigration-modal">
-        <div class="service-modal-wrapper">
+        <div class="modal-wrapper">
           <h2 class="sections-title">immigration</h2>
           <p class="modal-description">
             «Добре там, де нас немає» - думають багато людей та роками живуть на
@@ -1071,73 +931,50 @@
             влаштуватися в цих країнах.
           </p>
           <button class="close-modal js-close-modal"></button>
-          <ul class="countries-list immigration-list">
-            <li class="countries-item immigration-item">
+          <ul class="modal-categories-list">
+            <li class="modal-categories-item immigration-item">
               <img
                 src="./images/countries/canada.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">канада</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Програми:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                </ul>
-                <p class="variety-label">Наші послуги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                </ul>
+              <div class="modal-item-overlay">
+                <p class="modal-item-description">
+                  Одне з найпопулярніших напрямків для імміграції це Канада. У
+                  цій північній державі один з найвищих рівнів життя у світі,
+                  хороші зарплати, маса можливостей для розвитку і роботи.
+                  Зрештуючи, Канада просто красива країна з дивовижною природою.
+                  Тому не дивно, що ця держава стала однією з пріоритетних
+                  напрямків для імміграції. Тим більше що недавно Канада
+                  розширила імміграційний план на 2019-2020 роки. Країна готова
+                  надати вид на проживання майже мільйону чоловік. В нашу чергу
+                  ми зробимо максимально можливе щоб саме ви стали тим
+                  щасливчиком.
+                </p>
               </div>
             </li>
-            <li class="countries-item immigration-item">
+            <li class="modal-categories-item immigration-item">
               <img
                 src="./images/countries/australia.jpg"
                 alt=""
-                class="country-img"
+                class="modal-item-img"
                 width="300px"
                 height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">австралія</p>
               </div>
-              <div class="country-overlay">
-                <p class="variety-label">Програми:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                </ul>
-                <p class="variety-label">Вимоги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                </ul>
-                <p class="variety-label">Наші послуги:</p>
-                <ul class="variety-list">
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                  <li class="variety-item">Перелік:</li>
-                </ul>
+              <div class="modal-item-overlay">
+                <p class="modal-item-description">
+                  При виборі країни для переїзду, думка про імміграцію до
+                  Австралії найбільш часто відвідує уми громадян з різних
+                  куточків планети. І це не дивно. В країні найчистіше повітря,
+                  унікальне розмаїтість тваринного і рослинного світу, багаті
+                  природні ресурси, а рівень життя один з найвищих в світі.
+                </p>
               </div>
             </li>
           </ul>
@@ -1148,10 +985,121 @@
       </div>
     </div>
 
+    <!-- STUDY MODAL -->
+
+    <div class="modal service-modal" data-modal="study-modal">
+      <div class="modal-wrapper">
+        <h2 class="sections-title">Study Abroad</h2>
+        <p class="modal-description">
+          Ви зацікавлені отримати хороше робоче місце? Тоді краще зробити вибір
+          на користь вищої освіти за кордоном. Наш світ дуже швидко
+          розвивається, внаслідок чого постійно зростає і конкуренція на ринку
+          праці. Тому від кожної людини роботодавці очікують хороших знань в
+          сфері своєї роботи і високої кваліфікації. З огляду на те, що освіта
+          за кордоном має вже сформовані традиції, багато студентів, піклуючись
+          про своє подальше працевлаштування, вибирають саме його. Крім цього,
+          таке навчання дасть можливість не лише цікаво провести час в
+          університеті, але також спробувати себе в дослідницьких проектах,
+          побувати на стажуванні на відомих міжнародних підприємствах.
+        </p>
+        <button class="close-modal js-close-modal"></button>
+        <div class="study-context-wrapper">
+          <img
+            src="./images/study-abroad.jpeg"
+            alt="study"
+            class="modal-item-img"
+          />
+          <div class="modal-item-overlay">
+            <div
+              class="countries-list-wrapper countries-list-wrapper-for-study"
+            >
+              <p class="country-icons-label">
+                Маємо програми навчання в таких країнах як:
+              </p>
+              <ul class="countries-icons-list">
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/Canada.png"
+                    alt="canada"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Канада</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/United-States.png"
+                    alt="usa"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">США</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/England.png"
+                    alt="england"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Англія</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/Netherlands.png"
+                    alt="netherlands"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Нідерланди</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/Switzerland.png"
+                    alt="switzerland"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Швейцарія</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/Ireland.png"
+                    alt="switzerland"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Ірландія</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/Germany.png"
+                    alt="switzerland"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Німеччина</p>
+                </li>
+                <li class="countries-icons-item country-icon-for-study">
+                  <img
+                    src="./images/icons/flags/Australia.png"
+                    alt="switzerland"
+                    class="flags-icon"
+                  />
+                  <p class="country-icon-name">Астралія</p>
+                </li>
+              </ul>
+              <p class="country-icons-label">
+                Щоб отримати більш детальну інформацію по програмам
+                зареєструйтесь та ми зв'яжемось з Вами в найкоротші сроки для
+                подальшої консультації.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#footer" class="registry-btn js-close-modal service-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
     <!-- AGRICULTURE MODULE -->
 
     <div class="modal scope-of-work-modal" data-modal="agriculture-modal">
-      <div class="service-modal-wrapper">
+      <div class="modal-wrapper">
         <h2 class="sections-title">AGRICULTURE</h2>
         <p class="modal-description scope-description">
           Галузь сільського господарства та ветеринарії дозволяє вибирати з
@@ -1160,216 +1108,398 @@
           світу. Крім того, з отриманням досвіду, наявні знання можуть стати в
           нагоді для організації власного фермерського господарства.
         </p>
-        <button class="close-modal js-close-modal"></button>
-        <ul class="countries-list">
-          <li class="countries-item">
-            <img
-              src="./images/pigs.jpeg"
-              alt="pigs"
-              class="country-img"
-              width="300px"
-              height="400px"
-            />
+        <button class="close-modal orange js-close-modal"></button>
+        <ul class="modal-categories-list">
+          <li class="modal-categories-item">
+            <img src="./images/pigs.jpeg" alt="pigs" class="modal-item-img" />
             <div class="item-cover-gradient">
               <p class="country-name">свинарство</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- запліднення</li>
-                <li class="variety-item">- догляд</li>
-                <li class="variety-item">- катсрація</li>
-                <li class="variety-item">- годування</li>
-                <li class="variety-item">- забій</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Типова програма включатиме практичний досвід роботи:
+                  нормування кормів, контроль навколишнього середовища,
+                  моніторинг здоров'я та ветеринарна допомога! Будьте готові,
+                  оскільки ця програма вимагатиме від відвідувачів обміну тісно
+                  працювати з тваринами, щоб забезпечити здоров'я і благополуччя
+                  тварин, оскільки вони отримують розуміння часу та відданості
+                  справі вирощування свиней!
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="countries-item">
+          <li class="modal-categories-item">
+            <img src="./images/cows-2.jpg" alt="cows" class="modal-item-img" />
+            <div class="item-cover-gradient">
+              <p class="country-name">молочарня</p>
+            </div>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Отримайте досвід на деяких з найбільш прогресивних молочних
+                  ферм у приведених нижче країнах світу. Отримайте можливість
+                  вчитися з широкого спектру заходів від догляду за стадами до
+                  маркетингу молочних продуктів.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item">
             <img
-              src="./images/cows.jpeg"
-              alt="cows"
-              class="country-img"
-              width="300px"
-              height="400px"
+              src="./images/cattle.jpg"
+              alt="cattle"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">скотарство</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- запліднення</li>
-                <li class="variety-item">- догляд</li>
-                <li class="variety-item">- катсрація</li>
-                <li class="variety-item">- годування</li>
-                <li class="variety-item">- забій</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Як працівник по програмі великої рогатої худоби, він отримає
+                  практичний досвід в операціях великої рогатої худоби;
+                  отелення, відлучення, розведення та приготування кормів.
+                  Управління стадом і пасовищами.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="countries-item">
-            <img
-              src="./images/horse.jpg"
-              alt="horse"
-              class="country-img"
-              width="300px"
-              height="400px"
-            />
+          <li class="modal-categories-item item-to-grow">
+            <img src="./images/horse.jpg" alt="horse" class="modal-item-img" />
             <div class="item-cover-gradient">
               <p class="country-name">коні</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- запліднення</li>
-                <li class="variety-item">- догляд</li>
-                <li class="variety-item">- годування</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Отримайте змогу заробити великі кошти та підвищити рівень
+                  своїх знань і навичок у сфері ветеринарного догляду за кіньми.
+                  Завдяки цій практичній програмі ви краще зрозумієте
+                  індустріальну промисловість, необхідну допомогу, яка піде на
+                  піклування про коней, а також новітні технології у галузі
+                  ветеринарної техніки.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="countries-item">
-            <img
-              src="./images/birds.jpg"
-              alt="birds"
-              class="country-img"
-              width="300px"
-              height="400px"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">птиці</p>
-            </div>
-            <div class="country-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- догляд</li>
-                <li class="variety-item">- годування</li>
-                <li class="variety-item">- забій</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="countries-item">
+          <li class="modal-categories-item item-to-grow">
             <img
               src="./images/tractors.jpg"
               alt="tractors"
-              class="country-img"
-              width="300px"
-              height="400px"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">робота з технікою</p>
+              <p class="country-name">польові культури</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- агрокультура</li>
-                <li class="variety-item">- робота з тваринами</li>
-                <li class="variety-item">- робота з квітами</li>
-                <li class="variety-item">- робота з технікою на полі</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="countries-item">
-            <img
-              src="./images/field.jpg"
-              alt="field"
-              class="country-img"
-              width="300px"
-              height="400px"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">робота на полі</p>
-            </div>
-            <div class="country-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- агрокультура</li>
-                <li class="variety-item">- робота з тваринами</li>
-                <li class="variety-item">- робота з квітами</li>
-                <li class="variety-item">- робота з технікою на полі</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Ця програма включає можливості для запуску деяких з найновіших
+                  комбайнів і технологій. Отримати вплив на велику операцію
+                  збору врожаю та вивчити найбільш ефективні методи збирання на
+                  замовлення поряд із загальними навичками технічного
+                  обслуговування та збутом культур.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -1382,7 +1512,7 @@
     <!-- HORTICULTURE MODAL -->
 
     <div class="modal scope-of-work-modal" data-modal="horticulture-modal">
-      <div class="service-modal-wrapper">
+      <div class="modal-wrapper">
         <h2 class="sections-title">HORTICULTURE</h2>
         <p class="modal-description scope-description">
           Садівництво - це унікальна та високоприбуткова професія. Якщо Вам
@@ -1390,102 +1520,447 @@
           робота/стажуваня в країнах Європи а також США і Канаді стануть великим
           прибутком та корисним досвідом
         </p>
-        <button class="close-modal js-close-modal"></button>
-        <ul class="countries-list">
-          <li class="countries-item">
+        <button class="close-modal orange js-close-modal"></button>
+        <ul class="modal-categories-list">
+          <li class="modal-categories-item">
             <img
-              src="./images/horticulture/fruits.jpeg"
+              src="./images/horticulture/greenhouse.jpg"
               alt="pigs"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">ягоди</p>
+              <p class="country-name">тепличне г-то</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Програми роботи на теплиці пропонують працівникам якісним
+                  досвід та високий заробіток з вирощування та догляду за
+                  рослинами для роздрібної торгівлі та оптової торгівлі. За
+                  допомогою програми підготовки теплиць ви дізнаєтеся, як
+                  вирощувати і доглядати за різноманітними рослинами на основі
+                  циклу вирощування кожної рослини.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="countries-item">
+          <li class="modal-categories-item">
             <img
-              src="./images/horticulture/grapes.jpg"
-              alt="birds"
-              class="country-img"
+              src="./images/horticulture/landscaping.jpg"
+              alt="landscaping"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">виноградники</p>
+              <p class="country-name">ландшафтний дизайн</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Як учасник програми підготовки ландшафтів, ви матимете
+                  можливість працювати у професійному середовищі з житловими та
+                  діловими приміщеннями, стежити за ландшафтними проектами,
+                  використовувати машини, будувати ландшафтні структури.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="countries-item">
+          <li class="modal-categories-item">
             <img
-              src="./images/horticulture/flowers.jpg"
-              alt="tractors"
-              class="country-img"
+              src="./images/horticulture/orchard.jpg"
+              alt="landscaping"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">квіти</p>
+              <p class="country-name">плодівництво</p>
             </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Розміщення програм для садів включає невеликі фрукти, м'які
+                  фрукти та яблука. Незалежно від того, чи шукаєте ви невелику
+                  сільськогосподарську діяльність, або велику комерційну
+                  операцію, ми маємо правильну програму для вас, виходячи з
+                  ваших навичок та інтересів. Будучи учасником програми в саду,
+                  ви отримаєте практичний досвід і глибокі знання про галузь
+                  садівництва.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item item-to-grow">
+            <img
+              src="./images/horticulture/vegetables.jpg"
+              alt="landscaping"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">овочівництво</p>
+            </div>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  Завдяки даній програмі з виробництва овочів ви отримаєте не
+                  тільки практичний досвід роботи з різними овочами але і
+                  неймовірно високий заробіток. Можливості роботи включають як
+                  малі ферми, так і великі операції. Можливо, ви навіть матимете
+                  можливість ознайомитися з фермерами, якими продаються деякі
+                  вироби, вирощені на фермі.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item item-to-grow">
+            <img
+              src="./images/horticulture/viticulture.jpg"
+              alt="landscaping"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">виноградарство</p>
+            </div>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  На програмі виноградарства працівник може допомогти у багатьох
+                  різних аспектах виробництва виноградників, включаючи
+                  вирощування винограду, відбір проб, керування пологами,
+                  збирання врожаю. Програма виноградарства це не тільки
+                  достойний заробіток але ви будете мати можливість дізнатися
+                  більшість аспектів виноградника, включаючи відбір проб,
+                  процеси вирощування винограду, керування балдахіном, програми
+                  обприскування та споживання врожаю.
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -1498,7 +1973,7 @@
     <!-- FOOD PRODUCTION -->
 
     <div class="modal" data-modal="food-production-modal">
-      <div class="service-modal-wrapper">
+      <div class="modal-wrapper">
         <h2 class="sections-title">FOOD PRODUCTION</h2>
         <p class="modal-description scope-description">
           Харчова промисловість є однією з найголовніших галузей виробництва та
@@ -1507,146 +1982,227 @@
           економічного зростання. За кордоном працівник подібної сфери може
           цілком розраховувати на хорошу зарплату.
         </p>
-        <button class="close-modal js-close-modal"></button>
-        <ul class="countries-list">
-          <li class="countries-item">
-            <img
-              src="./images/food-production/conditors.jpeg"
-              alt="pigs"
-              class="country-img"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">кондитер</p>
-            </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="countries-item">
-            <img
-              src="./images/food-production/wine.jpg"
-              alt="birds"
-              class="country-img"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">виноробство</p>
-            </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="countries-item">
-            <img
-              src="./images/food-production/meat.jpg"
-              alt="tractors"
-              class="country-img"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">м'ясна промисловість</p>
-            </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="countries-item item-to-grow">
-            <img
-              src="./images/food-production/fish.jpg"
-              alt="tractors"
-              class="country-img"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">рибна промисловість</p>
-            </div>
-            <div class="country-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="countries-item item-to-grow">
+        <button class="close-modal orange js-close-modal"></button>
+        <ul class="modal-categories-list">
+          <li class="modal-categories-item">
             <img
               src="./images/food-production/milk.jpg"
               alt="tractors"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">молочна промисловість</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  ...
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item">
+            <img
+              src="./images/food-production/meat.jpg"
+              alt="meat"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">м'ясна промисловість</p>
+            </div>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="country-icons-label">
+                  ...
+                </p>
+                <ul class="countries-icons-list">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/England.png"
+                      alt="england"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Англія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Denmark.png"
+                      alt="netherlands"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Данія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Switzerland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швейцарія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Ireland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Australia.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item">
+            <img
+              src="./images/food-production/conditors.jpeg"
+              alt="pigs"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">кондитер</p>
+            </div>
+            <div class="modal-item-overlay"></div>
+          </li>
+          <li class="modal-categories-item">
+            <img
+              src="./images/food-production/wine.jpg"
+              alt="birds"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">виноробство</p>
+            </div>
+            <div class="modal-item-overlay">
+              <p class="variety-label">Країни:</p>
+              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
+              <p class="variety-label">Напрямки робіт:</p>
+              <ul class="variety-list">
+                <li class="variety-item">- текст</li>
+              </ul>
+              <p class="variety-label">Ви отримаєте:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Дохід:</li>
+                <li class="variety-item">Проживання:</li>
+                <li class="variety-item">Харування:</li>
+                <li class="variety-item">Додатково:</li>
+              </ul>
+              <p class="variety-label">Вимоги:</p>
+              <ul class="variety-list">
+                <li class="variety-item">Мова:</li>
+                <li class="variety-item">Досвід:</li>
+                <li class="variety-item">Статус:</li>
+                <li class="variety-item">Інше:</li>
+              </ul>
+            </div>
+          </li>
+          <li class="modal-categories-item item-to-grow">
+            <img
+              src="./images/food-production/fish.jpg"
+              alt="tractors"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">рибна промисловість</p>
+            </div>
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1687,17 +2243,17 @@
           працювати та подорожувати отримуючи при цьому високий заробіток.
         </p>
         <button class="close-modal js-close-modal"></button>
-        <ul class="countries-list">
+        <ul class="modal-categories-list">
           <li class="modal-transport-scope-item">
             <img
               src="./images/transport/usa-canada.jpg"
               alt="pigs"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">США<br />КАНАДА</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Напрямки робіт:</p>
               <ul class="variety-list">
                 <li class="variety-item">- текст</li>
@@ -1722,12 +2278,12 @@
             <img
               src="./images/transport/europe.jpg"
               alt="birds"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">ЄВПРОПА</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1769,17 +2325,17 @@
           умовах забезпечить кожного хто має хист до створення нових структур.
         </p>
         <button class="close-modal js-close-modal"></button>
-        <ul class="countries-list">
+        <ul class="modal-categories-list">
           <li class="modal-transport-scope-item">
             <img
               src="./images/constructions/technology.jpg"
               alt="technology"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">РОБОТА З ТЕХНІКОЮ</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1806,12 +2362,12 @@
             <img
               src="./images/constructions/builders.jpg"
               alt="builders"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">БУДІВЕЛЬНИКИ</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1854,17 +2410,17 @@
           високооплачуваних спеціалістів.
         </p>
         <button class="close-modal js-close-modal"></button>
-        <ul class="countries-list">
-          <li class="countries-item">
+        <ul class="modal-categories-list">
+          <li class="modal-categories-item">
             <img
               src="./images/hospitality/cooker.jpg"
               alt="cooker"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">кухар</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1887,16 +2443,16 @@
               </ul>
             </div>
           </li>
-          <li class="countries-item">
+          <li class="modal-categories-item">
             <img
               src="./images/hospitality/barman.jpg"
               alt="barman"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">бармен</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1919,16 +2475,16 @@
               </ul>
             </div>
           </li>
-          <li class="countries-item">
+          <li class="modal-categories-item">
             <img
               src="./images/hospitality/cleaning.jpg"
               alt="cleaning"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">прибиральник кімнат</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1951,16 +2507,16 @@
               </ul>
             </div>
           </li>
-          <li class="countries-item item-to-grow">
+          <li class="modal-categories-item item-to-grow">
             <img
               src="./images/hospitality/service-man.jpg"
               alt="service"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">офіціант</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
@@ -1983,16 +2539,16 @@
               </ul>
             </div>
           </li>
-          <li class="countries-item item-to-grow">
+          <li class="modal-categories-item item-to-grow">
             <img
               src="./images/hospitality/receptionist.jpg"
               alt="receptionist"
-              class="country-img"
+              class="modal-item-img"
             />
             <div class="item-cover-gradient">
               <p class="country-name">рецепціоніст</p>
             </div>
-            <div class="country-overlay">
+            <div class="modal-item-overlay">
               <p class="variety-label">Країни:</p>
               <p class="countries-of-work">Германія, Данія, Ірландія...</p>
               <p class="variety-label">Напрямки робіт:</p>
