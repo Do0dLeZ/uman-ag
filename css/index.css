@@ -798,6 +798,13 @@
   font-family: "Ubuntu";
 }
 
+.item-overlay-title {
+  font-size: 18px;
+  font-family: "Ubuntu";
+  color: white;
+  text-align: center;
+}
+
 .modal-item-description {
   position: absolute;
   width: 100%;
@@ -867,6 +874,11 @@
   flex-wrap: wrap;
 }
 
+.countries-icons-list.list-width-smaller {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .countries-icons-item {
   min-width: 60px;
   margin-bottom: 15px;
@@ -911,7 +923,7 @@
   min-width: 45%;
 }
 
-li + .item-to-grow {
+.modal-categories-item.item-to-grow {
   width: 45%;
 }
 
