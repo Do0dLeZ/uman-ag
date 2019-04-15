@@ -28,10 +28,31 @@
               height="100px"
             />
           </a>
+          <nav class="language-nav">
+            <ul class="language-list">
+              <li class="language-item">
+                <button class="change-language translate" value="UA" id="ua">
+                  UA
+                </button>
+              </li>
+              <li class="language-item">
+                <button class="change-language translate" value="EN" id="en">
+                  EN
+                </button>
+              </li>
+              <li class="language-item">
+                <button class="change-language translate" value="RU" id="ru">
+                  RU
+                </button>
+              </li>
+            </ul>
+          </nav>
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#why-us" class="nav-link">Про нас</a>
+                <a href="#why-us" class="nav-link lang" key="aboutUs"
+                  >Про нас</a
+                >
               </li>
               <li class="nav-item">
                 <a href="#service" class="nav-link">Послуги</a>
@@ -70,19 +91,19 @@
               <p class="why-us-number">01.</p>
               <p class="article-title">надійна репутація</p>
               <p class="why-us-description">
-                Наша команда з 1999 року "спеціалізується на робочих,
-                навачальних та імміграційних програмах до розвинуттх країн
-                світу..."
+                Нам 20 років. Наша команда з 1999 року організовує програми
+                навчання, стажування та професійну імміграцію до розвинутих
+                країн світу.
               </p>
             </li>
             <li class="why-us-item">
               <p class="why-us-number">02.</p>
               <p class="article-title">легальність програм</p>
               <p class="why-us-description">
-                Працюємо у відповідності з законодавством України. Співпрацюємо
-                лише з акредитованими імміграційними консультантами. Маємо
-                налагоджені тісні, перевірені зв’язки з закордонними
-                компаніями-партнераминами протягом десятків років
+                Пропонуємо лише легальні і шляхи досягнення ваших цілей.
+                Співпрацюємо лише з акредитованими імміграційними
+                консультантами. Маємо налагоджені тісні, перевірені зв’язки з
+                закордонними компаніями-партнераминами протягом десятків років.
               </p>
             </li>
             <li class="why-us-item">
@@ -91,9 +112,11 @@
                 індивідуальний підхід
               </p>
               <p class="why-us-description">
-                Під час консультації, провідні спеціалісти підберуть
-                найвигідніші країну, напрямок та програму базуючись на Ваших
-                вимогах
+                Під час консультації наші провідні спеціалісти підберуть
+                найбільш оптимальну країну, напрямок та програму базуючись на
+                Ваших навичках та очікуваннях. При необхіднсоті надаємо
+                можливість підняти рівень іноземної мови, кваліфікації до рівня
+                необхідного для участі в програмах.
               </p>
             </li>
             <li class="why-us-item">
@@ -103,7 +126,7 @@
                 Скориставшись нашими послугами, Ви станете одним з понад 2 000
                 інших людей які в даний момент працевлаштовані або кардинально
                 змінили своє життя на краще завдяки нам, іммігрувавши до
-                найрозвинутіших країн світу
+                найрозвинутіших країн світу.
               </p>
             </li>
             <li class="why-us-item">
@@ -112,7 +135,7 @@
               <p class="why-us-description">
                 З початку складання договору, ми максимально забезпечимо Вам
                 підтримку починаючи від збору документів до очікуваного
-                результату
+                результату.
               </p>
             </li>
           </ul>
@@ -193,9 +216,12 @@
         class="section-scope-of-work rotate-line-before rotate-line-after"
       >
         <div class="scope-of-work-wrapper">
-          <h2 class="sections-title" id="scope-of-work">напрямки діяльності</h2>
+          <h2 class="sections-title" id="scope-of-work">сфери промисловості</h2>
           <ul class="scope-of-work-list">
-            <li class="scope-of-work-item">
+            <li
+              class="scope-of-work-item js-open-modal"
+              data-modal="agriculture-modal"
+            >
               <img
                 src="./images/scope-agriculture.png"
                 alt="scope-agriculture"
@@ -210,12 +236,15 @@
               </p>
               <a
                 href=""
-                class="scope-of-work-more-link js-open-modal"
+                class="scope-of-work-more-link"
                 data-modal="agriculture-modal"
                 >детальніше</a
               >
             </li>
-            <li class="scope-of-work-item">
+            <li
+              class="scope-of-work-item js-open-modal"
+              data-modal="horticulture-modal"
+            >
               <img
                 src="./images/horticulture.jpg"
                 alt="scope-horticulture"
@@ -230,12 +259,15 @@
               </p>
               <a
                 href=""
-                class="scope-of-work-more-link js-open-modal"
+                class="scope-of-work-more-link"
                 data-modal="horticulture-modal"
                 >Детальніше</a
               >
             </li>
-            <li class="scope-of-work-item">
+            <li
+              class="scope-of-work-item js-open-modal"
+              data-modal="food-production-modal"
+            >
               <img
                 src="./images/food-production.jpg"
                 alt="scope-food-production"
@@ -254,7 +286,7 @@
                 >детальніше</a
               >
             </li>
-            <li class="scope-of-work-item">
+            <li class="scope-of-work-item" data-modal="food-production-modal">
               <img
                 src="./images/scope-logistics.png"
                 alt="scope-logistics"
@@ -271,12 +303,12 @@
               </p>
               <a
                 href=""
-                class="scope-of-work-more-link js-open-modal"
+                class="scope-of-work-more-link"
                 data-modal="transport-and-logistic-modal"
                 >детальніше</a
               >
             </li>
-            <li class="scope-of-work-item">
+            <li class="scope-of-work-item" data-modal="constructions-modal">
               <img
                 src="./images/scope-construction.png"
                 alt="scope-construction"
@@ -292,12 +324,15 @@
               </p>
               <a
                 href=""
-                class="scope-of-work-more-link js-open-modal"
+                class="scope-of-work-more-link"
                 data-modal="constructions-modal"
                 >детальніше</a
               >
             </li>
-            <li class="scope-of-work-item">
+            <li
+              class="scope-of-work-item js-open-modal"
+              data-modal="hospitality-modal"
+            >
               <img
                 src="./images/hospitality.jpg"
                 alt="scope-medicine"
@@ -313,7 +348,7 @@
               </p>
               <a
                 href=""
-                class="scope-of-work-more-link js-open-modal"
+                class="scope-of-work-more-link"
                 data-modal="hospitality-modal"
                 >детальніше</a
               >
@@ -422,7 +457,7 @@
             <div class="my-slides fade active-slide">
               <div class="comments-block-header-wrapper">
                 <img
-                  src="./images/person-test.png"
+                  src="./images/person-comments-photo/diam-kondratyuk.jpg"
                   alt="person"
                   class="comments-person-avatar"
                 />
@@ -430,18 +465,147 @@
                   <blockquote class="quotes">
                     <p class="quote-cntx">
                       <q
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Voluptatum eos iste beatae, accusantium
-                        necessitatibus, non repudiandae autem, tenetur enim
-                        earum suscipit sint quam ipsa? Saepe eius rem commodi
-                        id, consequuntur mollitia officiis, obcaecati
-                        exercitationem at nemo temporibus dolorem odit dicta.</q
+                        >Дякуючи компанії UMan.AG поїхав по програмі стажування
+                        до Німеччини та залишився задоволений. Мені підібрали
+                        програму і якщо порівнювати з роботою в Польщі, де я був
+                        декілька разів, то це небо і земля. Я працював в
+                        Карстена на сортуванні моркви, умови проживання
+                        класні,правда інета не було, але купили німецьку картку,
+                        підключили собі мобільний інет. Умови роботи нормальні,
+                        працювали по 12-14 годин, платили те що і було обіцяним.
+                        Тепер хочу знов туди, і всім раджу звертатись до цієї
+                        фірми, все чітко та ясно, мені сподобалось.</q
                       >
                     </p>
-                    <cite class="quote-author">Name Surname</cite>
+                    <cite class="quote-author">Дмитро Кондратюк</cite>
                     <ul class="social-list">
                       <li class="social-item">
-                        <a href="" class="fb-social-link"
+                        <a
+                          href="https://www.facebook.com/profile.php?id=100015117971003"
+                          class="fb-social-link"
+                          target="_blank"
+                          ><img
+                            src="./images/icons/facebook-square-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="insta-social-link">
+                          <img
+                            src="./images/icons/instagram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="telegram-social-link"
+                          ><img
+                            src="./images/icons/telegram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="my-slides fade">
+              <div class="comments-block-header-wrapper">
+                <img
+                  src="./images/person-comments-photo/anastasia-shmugina.jpg"
+                  alt="person"
+                  class="comments-person-avatar"
+                />
+                <div class="person-details">
+                  <blockquote class="quotes">
+                    <p class="quote-cntx">
+                      <q
+                        >ЗАДОВОЛЕНА!! Вже була не раз в Німеччині через цю
+                        компанію, в минулому році поїхала на квіти до Філіпа.
+                        Доречі, нас везуть прямо на ферму, самі ми не
+                        добирались. В Києві сіли, на фермі вийшли). Умови
+                        проживання шикарні- в гуртожитку є всі зручності, навіть
+                        посудомийна машина). Возили до ферми на автобусі (хвилин
+                        15 їхати). Відношення на фермі як до своїх, по оплаті не
+                        ображали), платили чесно. Чекаю сезону і буду їхати
+                        знов, спробую щось нове.</q
+                      >
+                    </p>
+                    <cite class="quote-author">Анастасія Шмугіна</cite>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a
+                          href="https://www.facebook.com/anastasia.shmugina"
+                          class="fb-social-link"
+                          target="_blank"
+                          ><img
+                            src="./images/icons/facebook-square-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="insta-social-link">
+                          <img
+                            src="./images/icons/instagram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                          />
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a href="" class="telegram-social-link"
+                          ><img
+                            src="./images/icons/telegram-brands.svg"
+                            alt="facebook-link"
+                            width="24px"
+                            height="24px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="my-slides fade">
+              <div class="comments-block-header-wrapper">
+                <img
+                  src="./images/person-comments-photo/36888022_394376357719516_4175556807055376384_n.jpg"
+                  alt="person"
+                  class="comments-person-avatar"
+                />
+                <div class="person-details">
+                  <blockquote class="quotes">
+                    <p class="quote-cntx">
+                      <q
+                        >Німеччині дуже сподобалась. Їздила тільки через цю
+                        фірму, бо вже перевірена роками =) Оформлення документів
+                        взагалі без проблем,все швидко та чітко. Виїжджала в
+                        строки,які мені повідомили ще при оформленні, все без
+                        затримок та чітко. З менеджером компанії тримала зв’язок
+                        весь час,поки була на фермі, по всіх питанням, завжди
+                        можна звернутись. Була на полуниці в Клауса, знов їду на
+                        полуницю, дуже задоволена. Якщо на рахунок заробітної
+                        плати, то розраховуйте на 9.19 в годину і в середньому
+                        мінус 100 євро , щомісячне зняття податку, але в цілому,
+                        не дивлячись на ці мінуси, все таки потрібно,</q
+                      >
+                    </p>
+                    <cite class="quote-author">Аліна Бурдейна</cite>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a
+                          href="https://www.facebook.com/alina.burdeyna.1"
+                          class="fb-social-link"
+                          target="_blank"
                           ><img
                             src="./images/icons/facebook-square-brands.svg"
                             alt="facebook-link"
@@ -484,126 +648,16 @@
                   <blockquote class="quotes">
                     <p class="quote-cntx">
                       <q
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Voluptatum eos iste beatae, accusantium
-                        necessitatibus, non repudiandae autem, tenetur enim
-                        earum suscipit sint quam ipsa? Saepe eius rem commodi
-                        id, consequuntur mollitia officiis, obcaecati
-                        exercitationem at nemo temporibus dolorem odit dicta.</q
+                        >Работаю с компанией уже несколько лет. Никаких
+                        нареканий, одни положительные впечатления. Будем
+                        продолжать сотрудничество. Программы по цветах очень
+                        класные)))</q
                       >
                     </p>
-                    <cite class="quote-author">Name Surname</cite>
+                    <cite class="quote-author">Артем</cite>
                     <ul class="social-list">
                       <li class="social-item">
-                        <a href="" class="fb-social-link"
-                          ><img
-                            src="./images/icons/facebook-square-brands.svg"
-                            alt="facebook-link"
-                            width="24px"
-                            height="24px"
-                        /></a>
-                      </li>
-                      <li class="social-item">
-                        <a href="" class="insta-social-link">
-                          <img
-                            src="./images/icons/instagram-brands.svg"
-                            alt="facebook-link"
-                            width="24px"
-                            height="24px"
-                          />
-                        </a>
-                      </li>
-                      <li class="social-item">
-                        <a href="" class="telegram-social-link"
-                          ><img
-                            src="./images/icons/telegram-brands.svg"
-                            alt="facebook-link"
-                            width="24px"
-                            height="24px"
-                        /></a>
-                      </li>
-                    </ul>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div class="my-slides fade">
-              <div class="comments-block-header-wrapper">
-                <img
-                  src="./images/person-test.png"
-                  alt="person"
-                  class="comments-person-avatar"
-                />
-                <div class="person-details">
-                  <blockquote class="quotes">
-                    <p class="quote-cntx">
-                      <q
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Voluptatum eos iste beatae, accusantium
-                        necessitatibus, non repudiandae autem, tenetur enim
-                        earum suscipit sint quam ipsa? Saepe eius rem commodi
-                        id, consequuntur mollitia officiis, obcaecati
-                        exercitationem at nemo temporibus dolorem odit dicta.</q
-                      >
-                    </p>
-                    <cite class="quote-author">Name Surname</cite>
-                    <ul class="social-list">
-                      <li class="social-item">
-                        <a href="" class="fb-social-link"
-                          ><img
-                            src="./images/icons/facebook-square-brands.svg"
-                            alt="facebook-link"
-                            width="24px"
-                            height="24px"
-                        /></a>
-                      </li>
-                      <li class="social-item">
-                        <a href="" class="insta-social-link">
-                          <img
-                            src="./images/icons/instagram-brands.svg"
-                            alt="facebook-link"
-                            width="24px"
-                            height="24px"
-                          />
-                        </a>
-                      </li>
-                      <li class="social-item">
-                        <a href="" class="telegram-social-link"
-                          ><img
-                            src="./images/icons/telegram-brands.svg"
-                            alt="facebook-link"
-                            width="24px"
-                            height="24px"
-                        /></a>
-                      </li>
-                    </ul>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div class="my-slides fade">
-              <div class="comments-block-header-wrapper">
-                <img
-                  src="./images/person-test.png"
-                  alt="person"
-                  class="comments-person-avatar"
-                />
-                <div class="person-details">
-                  <blockquote class="quotes">
-                    <p class="quote-cntx">
-                      <q
-                        >Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Voluptatum eos iste beatae, accusantium
-                        necessitatibus, non repudiandae autem, tenetur enim
-                        earum suscipit sint quam ipsa? Saepe eius rem commodi
-                        id, consequuntur mollitia officiis, obcaecati
-                        exercitationem at nemo temporibus dolorem odit dicta.</q
-                      >
-                    </p>
-                    <cite class="quote-author">Name Surname</cite>
-                    <ul class="social-list">
-                      <li class="social-item">
-                        <a href="" class="fb-social-link"
+                        <a href="" class="fb-social-link" target="_blank"
                           ><img
                             src="./images/icons/facebook-square-brands.svg"
                             alt="facebook-link"
@@ -1145,11 +1199,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
+                      src="./images/icons/flags/Netherlands.png"
                       alt="england"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Англія</p>
+                    <p class="country-icon-name">Нідерланди</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1190,6 +1244,14 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Астралія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Sweden.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швеція</p>
                   </li>
                 </ul>
               </div>
@@ -1227,11 +1289,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
+                      src="./images/icons/flags/Netherlands.png"
                       alt="england"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Англія</p>
+                    <p class="country-icon-name">Нідерланди</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1272,6 +1334,14 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Астралія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Sweden.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швеція</p>
                   </li>
                 </ul>
               </div>
@@ -1313,11 +1383,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
+                      src="./images/icons/flags/Netherlands.png"
                       alt="england"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Англія</p>
+                    <p class="country-icon-name">Нідерланди</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1358,6 +1428,14 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Астралія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Sweden.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Швеція</p>
                   </li>
                 </ul>
               </div>
@@ -1411,6 +1489,14 @@
                     />
                     <p class="country-icon-name">Астралія</p>
                   </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Japan.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Японія</p>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1452,46 +1538,6 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Germany.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Німеччина</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/Australia.png"
                       alt="switzerland"
                       class="flags-icon"
@@ -1529,7 +1575,7 @@
               class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">тепличне г-то</p>
+              <p class="country-name">теплиці</p>
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
@@ -1576,11 +1622,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/Switzerland.png"
+                      src="./images/icons/flags/Sweden.png"
                       alt="switzerland"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Швейцарія</p>
+                    <p class="country-icon-name">Швеція</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1589,6 +1635,14 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Finland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Фінляндія</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1630,51 +1684,11 @@
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/Canada.png"
-                      alt="canada"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Канада</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/United-States.png"
                       alt="usa"
                       class="flags-icon"
                     />
                     <p class="country-icon-name">США</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1751,11 +1765,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/Switzerland.png"
+                      src="./images/icons/flags/Sweden.png"
                       alt="switzerland"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Швейцарія</p>
+                    <p class="country-icon-name">Швеція</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1764,6 +1778,14 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Ірландія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Finland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Фінляндія</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1839,11 +1861,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/Switzerland.png"
+                      src="./images/icons/flags/Sweden.png"
                       alt="switzerland"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Швейцарія</p>
+                    <p class="country-icon-name">Швеція</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1868,6 +1890,14 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Астралія</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Finland.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Фінляндія</p>
                   </li>
                 </ul>
               </div>
@@ -1897,51 +1927,11 @@
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/Canada.png"
-                      alt="canada"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Канада</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/United-States.png"
                       alt="usa"
                       class="flags-icon"
                     />
                     <p class="country-icon-name">США</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -1996,9 +1986,9 @@
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
                 <p class="item-overlay-title">Молочна промисловість</p>
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   ...
-                </p>
+                </p> -->
                 <ul class="countries-icons-list list-width-smaller">
                   <li class="countries-icons-item">
                     <img
@@ -2018,22 +2008,6 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/Switzerland.png"
                       alt="switzerland"
                       class="flags-icon"
@@ -2042,27 +2016,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/Germany.png"
                       alt="switzerland"
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Німеччина</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Australia.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Астралія</p>
                   </li>
                 </ul>
               </div>
@@ -2080,9 +2038,9 @@
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
                 <p class="item-overlay-title">М'ясна промисловість</p>
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   ...
-                </p>
+                </p> -->
                 <ul class="countries-icons-list list-width-smaller">
                   <li class="countries-icons-item">
                     <img
@@ -2102,30 +2060,6 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/Ireland.png"
                       alt="switzerland"
                       class="flags-icon"
@@ -2139,14 +2073,6 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Німеччина</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Australia.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Астралія</p>
                   </li>
                 </ul>
               </div>
@@ -2164,9 +2090,9 @@
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
                 <p class="item-overlay-title">Рибна промисловість</p>
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   ...
-                </p>
+                </p> -->
                 <ul class="countries-icons-list list-width-smaller">
                   <li class="countries-icons-item">
                     <img
@@ -2184,45 +2110,33 @@
                     />
                     <p class="country-icon-name">США</p>
                   </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item item-to-grow">
+            <img
+              src="./images/food-production/wine.jpg"
+              alt="birds"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">виноробство</p>
+            </div>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Виноробство</p>
+                <p class="country-icons-label">
+                  ...
+                </p>
+                <ul class="countries-icons-list list-width-smaller">
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
+                      src="./images/icons/flags/United-States.png"
+                      alt="usa"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Germany.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Німеччина</p>
+                    <p class="country-icon-name">США</p>
                   </li>
                   <li class="countries-icons-item">
                     <img
@@ -2231,6 +2145,42 @@
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Астралія</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="modal-categories-item item-to-grow">
+            <img
+              src="./images/food-production/baker.jpg"
+              alt="baker"
+              class="modal-item-img"
+            />
+            <div class="item-cover-gradient">
+              <p class="country-name">Хлібопекарська прромисловість</p>
+            </div>
+            <div class="modal-item-overlay">
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Хлібопекарська прромисловість</p>
+                <!-- <p class="country-icons-label">
+                  ...
+                </p> -->
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Germany.png"
+                      alt="switzerland"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Німеччина</p>
                   </li>
                 </ul>
               </div>
@@ -2270,71 +2220,47 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
                       src="./images/icons/flags/Germany.png"
                       alt="switzerland"
                       class="flags-icon"
                     />
                     <p class="country-icon-name">Німеччина</p>
                   </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Australia.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Астралія</p>
-                  </li>
                 </ul>
               </div>
             </div>
           </li>
+        </ul>
+        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
+          >зареєструватись</a
+        >
+      </div>
+    </div>
+
+    <!-- TRANSPORT AND LOGISTICS MODAL-->
+
+    <div class="modal" data-modal="transport-and-logistic-modal">
+      <div class="modal-wrapper">
+        <h2 class="sections-title">TRANSPORT & LOGISTICS</h2>
+        <p class="modal-description scope-description">
+          Транспортування та логістика є невід'ємною частиною кожної міжнародної
+          компанії саме через це досвідченні водії мають надзвичайну можливість
+          працювати та подорожувати отримуючи при цьому високий заробіток.
+        </p>
+        <button class="close-modal orange js-close-modal"></button>
+        <ul class="modal-categories-list">
           <li class="modal-categories-item item-to-grow">
             <img
-              src="./images/food-production/wine.jpg"
-              alt="birds"
+              src="./images/transport/europe.jpg"
+              alt="tractors"
               class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">виноробство</p>
+              <p class="country-name">Водії та Диспетчера</p>
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="item-overlay-title">Виноробство</p>
-                <p class="country-icons-label">
-                  ...
-                </p>
+                <p class="item-overlay-title">Водії та Диспетчера</p>
                 <ul class="countries-icons-list list-width-smaller">
                   <li class="countries-icons-item">
                     <img
@@ -2354,51 +2280,11 @@
                   </li>
                   <li class="countries-icons-item">
                     <img
-                      src="./images/icons/flags/England.png"
-                      alt="england"
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
                       class="flags-icon"
                     />
-                    <p class="country-icon-name">Англія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Denmark.png"
-                      alt="netherlands"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Данія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Switzerland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Швейцарія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Ireland.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Ірландія</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Germany.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Німеччина</p>
-                  </li>
-                  <li class="countries-icons-item">
-                    <img
-                      src="./images/icons/flags/Australia.png"
-                      alt="switzerland"
-                      class="flags-icon"
-                    />
-                    <p class="country-icon-name">Астралія</p>
+                    <p class="country-icon-name">Європа</p>
                   </li>
                 </ul>
               </div>
@@ -2411,91 +2297,10 @@
       </div>
     </div>
 
-    <!-- TRANSPORT AND LOGISTICS MODAL-->
-
-    <div class="modal" data-modal="transport-and-logistic-modal">
-      <div class="service-modal-wrapper">
-        <h2 class="sections-title">TRANSPORT & LOGISTIC</h2>
-        <p class="modal-description scope-description">
-          Транспортування та логістика є невід'ємною частиною кожної міжнародної
-          компанії саме через це досвідченні водії мають надзвичайну можливість
-          працювати та подорожувати отримуючи при цьому високий заробіток.
-        </p>
-        <button class="close-modal js-close-modal"></button>
-        <ul class="modal-categories-list">
-          <li class="modal-transport-scope-item">
-            <img
-              src="./images/transport/usa-canada.jpg"
-              alt="pigs"
-              class="modal-item-img"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">США<br />КАНАДА</p>
-            </div>
-            <div class="modal-item-overlay">
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-          <li class="modal-transport-scope-item">
-            <img
-              src="./images/transport/europe.jpg"
-              alt="birds"
-              class="modal-item-img"
-            />
-            <div class="item-cover-gradient">
-              <p class="country-name">ЄВПРОПА</p>
-            </div>
-            <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <a href="#footer" class="scope-registry-btn js-close-modal scope-btn"
-          >зареєструватись</a
-        >
-      </div>
-    </div>
-
     <!-- CONSTRUCTIONS -->
 
     <div class="modal" data-modal="constructions-modal">
-      <div class="service-modal-wrapper">
+      <div class="modal-wrapper">
         <h2 class="sections-title">CONSTRUCTIONS</h2>
         <p class="modal-description scope-description">
           Повсякденно у тисячах міст за кордоном будуються нові та реставруються
@@ -2503,7 +2308,7 @@
           високорозвинутих країнах завжди потребує спеціалістів та на вигідних
           умовах забезпечить кожного хто має хист до створення нових структур.
         </p>
-        <button class="close-modal js-close-modal"></button>
+        <button class="close-modal orange js-close-modal"></button>
         <ul class="modal-categories-list">
           <li class="modal-transport-scope-item">
             <img
@@ -2515,26 +2320,27 @@
               <p class="country-name">РОБОТА З ТЕХНІКОЮ</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Робота з технікою</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="modal-transport-scope-item">
@@ -2547,26 +2353,27 @@
               <p class="country-name">БУДІВЕЛЬНИКИ</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Будівельники</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -2579,7 +2386,7 @@
     <!-- HOSPITALITY -->
 
     <div class="modal" data-modal="hospitality-modal">
-      <div class="service-modal-wrapper">
+      <div class="modal-wrapper">
         <h2 class="sections-title">HOSPITALITY</h2>
         <p class="modal-description scope-description">
           У сучасних умовах постійно зростає інтерес до індустрії гостинності,
@@ -2588,7 +2395,7 @@
           бізнесу – один з найзатребуваніших, найпрестижніших і найбільш
           високооплачуваних спеціалістів.
         </p>
-        <button class="close-modal js-close-modal"></button>
+        <button class="close-modal orange js-close-modal"></button>
         <ul class="modal-categories-list">
           <li class="modal-categories-item">
             <img
@@ -2600,26 +2407,27 @@
               <p class="country-name">кухар</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Кухар</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/Canada.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Канада</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="modal-categories-item">
@@ -2632,26 +2440,27 @@
               <p class="country-name">бармен</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Бармен</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="modal-categories-item">
@@ -2664,26 +2473,27 @@
               <p class="country-name">прибиральник кімнат</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Прибиральник кімнат</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="modal-categories-item item-to-grow">
@@ -2696,26 +2506,27 @@
               <p class="country-name">офіціант</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Офіціант</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="modal-categories-item item-to-grow">
@@ -2728,26 +2539,27 @@
               <p class="country-name">рецепціоніст</p>
             </div>
             <div class="modal-item-overlay">
-              <p class="variety-label">Країни:</p>
-              <p class="countries-of-work">Германія, Данія, Ірландія...</p>
-              <p class="variety-label">Напрямки робіт:</p>
-              <ul class="variety-list">
-                <li class="variety-item">- текст</li>
-              </ul>
-              <p class="variety-label">Ви отримаєте:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Дохід:</li>
-                <li class="variety-item">Проживання:</li>
-                <li class="variety-item">Харування:</li>
-                <li class="variety-item">Додатково:</li>
-              </ul>
-              <p class="variety-label">Вимоги:</p>
-              <ul class="variety-list">
-                <li class="variety-item">Мова:</li>
-                <li class="variety-item">Досвід:</li>
-                <li class="variety-item">Статус:</li>
-                <li class="variety-item">Інше:</li>
-              </ul>
+              <div class="countries-list-wrapper">
+                <p class="item-overlay-title">Рецепціоніст</p>
+                <ul class="countries-icons-list list-width-smaller">
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/United-States.png"
+                      alt="canada"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">США</p>
+                  </li>
+                  <li class="countries-icons-item">
+                    <img
+                      src="./images/icons/flags/European-Union.png"
+                      alt="usa"
+                      class="flags-icon"
+                    />
+                    <p class="country-icon-name">Європа</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
@@ -2759,5 +2571,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/language.js"></script>
   </body>
 </html>
