@@ -16,6 +16,7 @@
     </title>
   </head>
   <body class="body">
+    <button onclick="topFunction()" id="btn-up" title="Go to top"></button>
     <div class="wrapper">
       <div class="header-banner-wrapper">
         <header class="header">
@@ -75,14 +76,14 @@
                   >Напрямки</a
                 >
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a
                   href="#how-we-work"
                   class="nav-link"
                   text-translate="menuSteps"
                   >Кроки</a
                 >
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a href="#footer" class="nav-link" text-translate="menuContacts"
                   >Контакти</a
@@ -92,14 +93,20 @@
           </nav>
         </header>
         <div class="header-title-wrapper">
-          <h1 class="main-title">
+          <!-- <h1 class="main-title">
             Прибуткова робота та стажування у найрозвинутіших країнах світу з
             можливістю імміграції
-          </h1>
-          <h2 class="main-description">
+          </h1> -->
+          <h2 class="main-title" text-translate="mainTitle">
+            Агенство з працевлаштування та імміграції
+          </h2>
+          <h2 class="main-description" text-translate="mainSubTitle">
+            Ми створюємо кар'єри та бізнеси, поєднуючи їх
+          </h2>
+          <!-- <h2 class="main-description">
             Вже сьогодні саме для Вас ми маємо екслюзивні пропозиції щодо
             працевлаштування за кордоном з заробітком більше ніж 1200 €/міс
-          </h2>
+          </h2> -->
           <a href="#footer" class="main-registry-btn">зареєструватись</a>
         </div>
       </div>
@@ -111,7 +118,7 @@
           <ul class="why-us-list">
             <li class="why-us-item">
               <p class="why-us-number">01.</p>
-              <p class="article-title">надійна репутація</p>
+              <p class="article-title">досвід</p>
               <p class="why-us-description">
                 Нам 20 років. Наша команда з 1999 року організовує програми
                 навчання, стажування та професійну імміграцію до розвинутих
@@ -251,10 +258,10 @@
               />
               <h3 class="article-title scope-of-work-name">Agriculture</h3>
               <p class="article-description scope-of-work-description">
-                Галузь сільського господарства та ветеринарії дозволяє вибирати
-                з безлічі різних опцій працевлаштування та, важливо пам'ятати,
-                що хороші професіонали цієї сфери затребувані практично в
-                будь-якій країні світу....
+                Галузь сільського господарства дозволяє вибирати з безлічі
+                різних опцій працевлаштування та, важливо пам'ятати, що хороші
+                професіонали цієї сфери затребувані практично в будь-якій країні
+                світу...
               </p>
               <a
                 href=""
@@ -308,7 +315,10 @@
                 >детальніше</a
               >
             </li>
-            <li class="scope-of-work-item" data-modal="food-production-modal">
+            <li
+              class="scope-of-work-item js-open-modal"
+              data-modal="transport-and-logistic-modal"
+            >
               <img
                 src="./images/scope-logistics.png"
                 alt="scope-logistics"
@@ -330,7 +340,10 @@
                 >детальніше</a
               >
             </li>
-            <li class="scope-of-work-item" data-modal="constructions-modal">
+            <li
+              class="scope-of-work-item js-open-modal"
+              data-modal="constructions-modal"
+            >
               <img
                 src="./images/scope-construction.png"
                 alt="scope-construction"
@@ -407,10 +420,9 @@
                 Підписуємо догвовір
               </h3>
               <p class="article-description">
-                Ви студент, їдете на стажування - підписавши договір про
-                офіційне оформлення в навчальному закладі. Якщо це професійна
-                імміграція - підписуємо договір і оплачуємо послуги
-                консультанта.
+                Ви студент, їдете на стажування - готуємо договір про офіційне
+                оформлення в навчальному закладі. Якщо це професійна імміграція
+                - підписуємо договір і оплачуємо послуги консультанта.
               </p>
             </li>
             <li class="how-we-work-item">
@@ -422,10 +434,10 @@
                 Збираємо та подаємо документи
               </h3>
               <p class="article-description">
-                Разом підготуємо і подаємо пакет документів, при необхідності
-                переведемо і легалізували їх. Якщо ви студент навчального
-                закладу, з яким у нас підписаний договір - організаційні питання
-                ми беремо на себе.
+                Разом з вами готуємо та подаємо пакет документів, при
+                необхідності переводимо та нотаріально завіряємо їх. Якщо ви
+                студент навчального закладу, з яким у нас підписаний договір -
+                організаційні питання ми беремо на себе.
               </p>
             </li>
             <li class="how-we-work-item">
@@ -440,7 +452,7 @@
                 Отримуєте договір на навчання або стажування з деталізацією всіх
                 умов. Контролюємо процес схвалення від відповідних відомств або
                 консульства. Якщо є якісь перешкоди, усуваємо їх. Отримуємо
-                результат - оплачуємо.
+                результат - сплачуєте необхідні платежі та збори.
               </p>
             </li>
             <li class="how-we-work-item">
@@ -450,9 +462,9 @@
               </div>
               <h3 class="article-title how-we-work-step-name">Супроводжуємо</h3>
               <p class="article-description">
-                Оформимо візи, страховку. квитки і трансфер. Під час програми
-                ми, наші партнери і представники на зв'язку з вами з питань
-                інтеграції, реєстрації та адаптації.
+                Оформлюємо візи, страховку, квитки і трансфер. Під час програми
+                ми, наші партнери і представники весь час на зв'язку з вами з
+                питань інтеграції, реєстрації та адаптації.
               </p>
             </li>
             <li class="how-we-work-item">
@@ -463,9 +475,9 @@
               <h3 class="article-title how-we-work-step-name">Нові цілі</h3>
               <p class="article-description">
                 Крім досвіду і знань, отриманих під час наших програм часто
-                виникають нові цілі. Після навчання на практику, потім в іншу
-                країну, а можливо і отримання громадянства. Допоможемо
-                побудувати кар'єру, освоїтися в розвиненій країні і налагодити
+                виникають нові цілі - після навчання поїхати на практику, потім
+                в іншу країну для отримання професійного досвіду. Допоможемо
+                побудувати кар'єру, освоїтися в розвиненій країні та налагодити
                 життя.
               </p>
             </li>
@@ -740,11 +752,19 @@
             м. Умань, вул. Європейська 11, п. індекс: 20-300
           </address>
           <p class="cont-info">
-            <a href="tel:[+380961664939]" class="phone-number"
-              >+38 (096) 166 49 39</a
-            >
+            Тел:<br />
+            <a href="tel:[+380633137677]" class="phone-number"
+              >+38 (096) 779 25 65</a
+            ><br />
+            <a href="tel:[+380633137677]" class="phone-number"
+              >+38 (063) 313 76 77</a
+            ><br />
+            <a href="tel:[+380633137677]" class="phone-number"
+              >+38 (095) 798 18 59</a
+            ><br />
           </p>
           <p class="cont-info">
+            E-mail:<br />
             <a href="email:[kolomiets1990@gmail.com]" class="email"
               >kolomiets1990@gmail.com</a
             >
@@ -2590,6 +2610,30 @@
         >
       </div>
     </div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("btn-up").style.display = "block";
+        } else {
+          document.getElementById("btn-up").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
 
     <script src="./js/modal.js"></script>
     <script src="./js/slider.js"></script>

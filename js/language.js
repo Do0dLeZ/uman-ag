@@ -1,21 +1,27 @@
 const languages = {
   en: {
     chooseLang: "Choose language:",
+    //Main titles
+    mainTitle: "Recruitment and Immigration Solutions",
+    mainSubTitle: "We develop people and businesses by putting them together",
     //Navigation
     menuAboutUs: "About us",
     menuService: "Services",
-    menuScopes: "Directions",
-    menuSteps: "Steps",
+    menuScopes: "Industries",
+    // menuSteps: "Steps",
     menuContacts: "Contacts"
     //About Us Section
   },
   uk: {
     chooseLang: "Виберіть мову:",
+    //Main titles
+    mainTitle: "Агенство з працевлаштування та імміграції",
+    mainSubTitle: "Ми створюємо кар'єри та бізнеси, поєднуючи їх",
     //Navigation
     menuAboutUs: "Про нас",
     menuService: "Послуги",
     menuScopes: "Напрямки",
-    menuSteps: "Кроки",
+    // menuSteps: "Кроки",
     menuContacts: "Контакти"
     //About Us Section
   },

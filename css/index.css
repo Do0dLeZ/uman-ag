@@ -7,6 +7,33 @@
   box-sizing: border-box;
 }
 
+#btn-up {
+  display: none; /* Hidden by default */
+  width: 24px;
+  height: 24px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 10px solid transparent;
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 24px; /* Increase font size */
+  background-image: url("../images/icons/arrow-up-solid.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#btn-up:hover {
+  background-color: rgba(85, 85, 85); /* Add a dark-grey background on hover */
+  border: 10px solid rgba(85, 85, 85);
+  background-image: url("../images/icons/arrow-up-solid-orange.svg");
+}
+
 .wrapper {
   font-family: "Ubuntu";
 }
@@ -123,8 +150,10 @@
 
 .main-title {
   text-transform: uppercase;
+  font-size: 38px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
 .main-description {
