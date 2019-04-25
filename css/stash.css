@@ -7,18 +7,39 @@
   box-sizing: border-box;
 }
 
+#btn-up {
+  display: none; /* Hidden by default */
+  width: 24px;
+  height: 24px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 10px solid transparent;
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 24px; /* Increase font size */
+  background-image: url("../images/icons/arrow-up-solid.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#btn-up:hover {
+  background-color: rgba(85, 85, 85); /* Add a dark-grey background on hover */
+  border: 10px solid rgba(85, 85, 85);
+  background-image: url("../images/icons/arrow-up-solid-orange.svg");
+}
+
 .wrapper {
   font-family: "Ubuntu";
 }
 
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .header-banner-wrapper {
-  min-height: 930px;
+  min-height: 1100px;
   background-image: url("../images/header-background.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -26,14 +47,18 @@
 }
 
 .header {
+  max-width: 1170px;
+  margin: 0 auto;
   padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 50vh;
-  position: relative;
 }
 
 .logo-link {
   text-decoration: none;
-  /* margin-right: 15px; */
+  margin-right: 15px;
 }
 
 .change-language-btn {
@@ -66,33 +91,32 @@
   transform: translate(1px, 1px);
 }
 
-.nav-list {
-  list-style: none;
-  position: absolute;
-  top: 15px;
-  right: 10px;
+.choose-language {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
 }
 
-.language-nav {
-  width: 150px;
-  padding-top: 15px;
-}
-
+.nav-list,
 .language-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  /* margin: 0 auto; */
+  flex-wrap: wrap;
+  max-width: 600px;
 }
 
-.choose-language {
-  color: white;
-  text-align: center;
-  margin-bottom: 5px;
+.nav-item:last-child,
+.language-item:last-child {
+  margin-right: 0;
 }
 
-.nav-item:not(:last-child) {
-  margin-bottom: 13px;
+.nav-item,
+.language-item {
+  position: relative;
+  margin-right: 25px;
 }
 
 .nav-link {
@@ -115,7 +139,7 @@
 }
 
 .header-title-wrapper {
-  padding: 0 20px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -126,14 +150,14 @@
 
 .main-title {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 38px;
   font-weight: 700;
+  font-size: 42px;
   margin-bottom: 15px;
 }
 
 .main-description {
-  font-size: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .main-registry-btn {
@@ -158,7 +182,7 @@
 }
 
 .rotate-line-before:before {
-  top: -100px;
+  top: -140px;
   content: "";
   display: block;
   min-height: 180px;
@@ -170,7 +194,7 @@
 }
 
 .rotate-line-after:after {
-  bottom: -100px;
+  bottom: -140px;
   content: "";
   display: block;
   min-height: 180px;
@@ -191,6 +215,7 @@
 }
 
 .why-us-wrapper {
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -199,7 +224,7 @@
 .sections-title {
   font-family: "Ubuntu";
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 48px;
   color: var(--sections-title-color);
   text-align: center;
   word-spacing: 20px;
@@ -215,6 +240,8 @@
 
 .why-us-item {
   position: relative;
+  min-width: 350px;
+  max-width: 350px;
   padding-left: 70px;
   margin-bottom: 35px;
 }
@@ -252,17 +279,27 @@
 }
 
 .section-service {
-  background-color: #708090;
+  background-image: url("../images/service-background-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1000px;
   position: relative;
   z-index: 0;
 }
 
 .service-wrapper {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  margin: auto;
+  max-width: 1200px;
+  padding-top: 100px;
+}
+
+.service-title {
+  padding-top: 80px;
 }
 
 .service-list {
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -270,12 +307,10 @@
 }
 
 .service-item {
-  padding-top: 120px;
+  min-width: 300px;
+  max-width: 300px;
+  padding-top: 130px;
   position: relative;
-}
-
-.service-item:not(:last-child) {
-  margin-bottom: 25px;
 }
 
 .srvice-icon {
@@ -293,6 +328,7 @@
 .service-description {
   font-size: 18px;
   margin-bottom: 25px;
+  min-height: 150px;
 }
 
 .service-read-more,
@@ -333,13 +369,17 @@
 
 .scope-of-work-list {
   list-style: none;
+  max-width: 1200px;
   padding-top: 40px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .scope-of-work-item {
+  min-width: 300px;
+  max-width: 374px;
   min-height: 545px;
   margin-bottom: 35px;
   transition: 0.4s ease;
@@ -356,8 +396,9 @@
 }
 
 .scope-of-work-img {
-  width: 100%;
-  min-height: 225px;
+  min-width: 368px;
+  max-width: 370px;
+  height: 225px;
   object-fit: cover;
 }
 
@@ -368,7 +409,8 @@
 }
 
 .scope-of-work-description {
-  margin-bottom: 25px;
+  min-height: 170px;
+  margin-bottom: 15px;
 }
 
 .scope-of-work-more-link {
@@ -382,18 +424,23 @@
 }
 
 .section-how-we-work {
-  background-color: #708090;
+  background-image: url("../images/how-we-work.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1200px;
   position: relative;
   z-index: -1;
-  padding-bottom: 150px;
 }
 
 .how-we-work-wrapper {
+  padding-top: 100px;
   margin: auto;
+  max-width: 1200px;
 }
 
 .how-we-work-title {
-  padding: 150px 0 50px 0;
+  padding: 100px 0 100px 0;
 }
 
 .how-we-work-list {
@@ -405,13 +452,18 @@
 }
 
 .how-we-work-item {
+  padding-top: 50px;
+  min-width: 350px;
+  max-width: 370px;
   position: relative;
   margin-bottom: 25px;
 }
 
 .how-we-work-counter-wrapper {
+  position: absolute;
   display: flex;
   align-items: center;
+  top: 0;
 }
 
 .step {
@@ -423,12 +475,10 @@
   font-size: 1.5em;
   padding-top: 4px;
   color: var(--how-we-work-max-step-color);
-  margin-right: 15px;
 }
 
 .how-we-work-step-name {
-  font-size: 21px;
-  margin-bottom: 0;
+  min-height: 35px;
 }
 
 .section-comments {
@@ -449,7 +499,7 @@
 }
 
 .slide-container {
-  /* max-width: 1000px; */
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -461,8 +511,8 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  top: 80px;
-  padding: 12px;
+  top: 50%;
+  padding: 18px;
   text-decoration: none;
   transition: 0.6s ease;
 }
@@ -474,18 +524,18 @@
 }
 
 .ctrl-prev {
-  left: 10px;
+  left: -50px;
   background-image: url(../images/icons/left-arrow.svg);
 }
 
 .ctrl-next {
-  right: 10px;
+  right: -50px;
   background-image: url(../images/icons/right-arrow.svg);
 }
 
 .slider-pagination {
   position: absolute;
-  bottom: -30px;
+  bottom: -18px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -538,14 +588,10 @@
 }
 
 .comments-block-header-wrapper {
-  /* display: flex;
-  justify-content: space-around; */
+  display: flex;
+  justify-content: space-around;
   /* align-items: center; */
-  /* flex-wrap: wrap; */
-  margin: 0 auto;
-  padding-top: 200px;
-  /* position: relative; */
-  /* display: inline; */
+  flex-wrap: wrap;
 }
 
 .comments-person-avatar {
@@ -554,19 +600,12 @@
   border: 2px solid white;
   padding: 5px;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  /* margin-bottom: 25px; */
+  margin-left: 25px;
 }
 
 .person-details {
-  /* min-width: 320px;
-  max-width: 350px; */
-  /* margin: 0 auto; */
-  min-width: 320px;
-  padding: 0 40px;
+  min-width: 20%;
+  max-width: 60%;
 }
 
 .social-list {
@@ -580,8 +619,7 @@
 }
 
 .quote-cntx {
-  font-size: 16px;
-  /* width: 100%; */
+  font-size: 24px;
   margin-bottom: 10px;
   font-family: "Ubuntu";
 }
@@ -600,11 +638,11 @@
 
 .footer-wrapper {
   display: flex;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding-bottom: 50px;
 }
 
@@ -616,19 +654,18 @@
 
 .cont-info {
   font-family: "Ubuntu";
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 
 .address {
   font-weight: 700;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .phone-number,
 .email {
   text-decoration: none;
   color: var(--background-color-work-scope);
-  display: block;
 }
 
 .uman-rights {
@@ -667,9 +704,9 @@
   flex-grow: 1;
 }
 
-/* .margin-right-for-inputs {
+.margin-right-for-inputs {
   margin-right: 15px;
-} */
+}
 
 .input-comments {
   min-width: 100%;
@@ -728,7 +765,7 @@
 .modal {
   opacity: 0;
   visibility: hidden;
-  width: 100%;
+  width: 80%;
   max-height: 100%;
   overflow-y: auto;
 
@@ -746,11 +783,9 @@
 }
 
 .modal-wrapper {
-  /* max-width: 1100px; */
-  min-width: 320px;
+  max-width: 1100px;
   height: 80%;
   margin: 0 auto;
-  padding: 0 20px;
   position: relative;
   margin-bottom: 35px;
 }
@@ -767,8 +802,8 @@
   position: fixed;
   right: 15px;
   top: 15px;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   background-image: url("../images/icons/close-solid.svg");
   background-repeat: no-repeat;
@@ -810,14 +845,11 @@
 }
 
 .modal-categories-item {
+  width: 300px;
   height: 400px;
   position: relative;
   transition: all 0.2s ease-in-out;
   margin-bottom: 35px;
-}
-
-.modal-categories-item.work-and-tr-item {
-  width: 300px;
 }
 
 .scope-description {
@@ -871,7 +903,7 @@
 }
 
 .study-context-wrapper {
-  /* width: 600px; */
+  width: 600px;
   height: 400px;
   margin: 0 auto;
   position: relative;
@@ -975,6 +1007,14 @@
   object-fit: cover;
 }
 
+.immigration-item {
+  min-width: 45%;
+}
+
+.modal-categories-item.item-to-grow {
+  width: 45%;
+}
+
 .registry-btn,
 .scope-registry-btn {
   text-decoration: none;
@@ -999,8 +1039,4 @@
 .registry-btn:hover {
   color: white;
   border-color: white;
-}
-
-.modal.country-description-modal {
-  width: 70%;
 }

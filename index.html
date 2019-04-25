@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>
       Агенство з працевлаштування за кордоном UMan.AG - Робота | Стажування |
       Імміграція | Навчання
@@ -17,18 +19,52 @@
   </head>
   <body class="body">
     <button onclick="topFunction()" id="btn-up" title="Go to top"></button>
-    <div class="wrapper">
-      <div class="header-banner-wrapper">
-        <header class="header">
-          <a href="#" class="logo-link">
-            <img
-              src="./images/uman-ag-logo.svg"
-              alt="logo"
-              class="logo-icon"
-              width="200px"
-              height="100px"
-            />
-          </a>
+    <!-- <div class="wrapper"> -->
+    <div class="header-banner-wrapper">
+      <header class="header container">
+        <a href="#" class="logo-link">
+          <img
+            src="./images/uman-ag-logo.svg"
+            alt="logo"
+            class="logo-icon"
+            width="200px"
+            height="100px"
+          />
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#why-us" class="nav-link" text-translate="menuAboutUs"
+                >Про нас</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#service" class="nav-link" text-translate="menuService"
+                >Послуги</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#scope-of-work"
+                class="nav-link"
+                text-translate="menuScopes"
+                >Напрямки</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+                <a
+                  href="#how-we-work"
+                  class="nav-link"
+                  text-translate="menuSteps"
+                  >Кроки</a
+                >
+              </li> -->
+            <li class="nav-item">
+              <a href="#footer" class="nav-link" text-translate="menuContacts"
+                >Контакти</a
+              >
+            </li>
+          </ul>
           <nav class="language-nav">
             <p class="choose-language" text-translate="chooseLang">
               Виберіть мову:
@@ -56,64 +92,30 @@
               </li>
             </ul>
           </nav>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#why-us" class="nav-link" text-translate="menuAboutUs"
-                  >Про нас</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#service" class="nav-link" text-translate="menuService"
-                  >Послуги</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="#scope-of-work"
-                  class="nav-link"
-                  text-translate="menuScopes"
-                  >Напрямки</a
-                >
-              </li>
-              <!-- <li class="nav-item">
-                <a
-                  href="#how-we-work"
-                  class="nav-link"
-                  text-translate="menuSteps"
-                  >Кроки</a
-                >
-              </li> -->
-              <li class="nav-item">
-                <a href="#footer" class="nav-link" text-translate="menuContacts"
-                  >Контакти</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="header-title-wrapper">
-          <!-- <h1 class="main-title">
+        </nav>
+      </header>
+      <div class="header-title-wrapper">
+        <!-- <h1 class="main-title">
             Прибуткова робота та стажування у найрозвинутіших країнах світу з
             можливістю імміграції
           </h1> -->
-          <h2 class="main-title" text-translate="mainTitle">
-            Агенство з працевлаштування та імміграції
-          </h2>
-          <h2 class="main-description" text-translate="mainSubTitle">
-            Ми створюємо кар'єри та бізнеси, поєднуючи їх
-          </h2>
-          <!-- <h2 class="main-description">
+        <h2 class="main-title" text-translate="mainTitle">
+          Агенство з працевлаштування та імміграції
+        </h2>
+        <h2 class="main-description" text-translate="mainSubTitle">
+          Ми створюємо кар'єри та бізнеси, поєднуючи їх
+        </h2>
+        <!-- <h2 class="main-description">
             Вже сьогодні саме для Вас ми маємо екслюзивні пропозиції щодо
             працевлаштування за кордоном з заробітком більше ніж 1200 €/міс
           </h2> -->
-          <a href="#footer" class="main-registry-btn">зареєструватись</a>
-        </div>
+        <a href="#footer" class="main-registry-btn">зареєструватись</a>
       </div>
     </div>
+    <!-- </div> -->
     <main class="main">
       <section class="why-us rotate-line-before rotate-line-after">
-        <div class="why-us-wrapper">
+        <div class="why-us-wrapper container">
           <h2 class="sections-title" id="why-us">чому обирають нас?</h2>
           <ul class="why-us-list">
             <li class="why-us-item">
@@ -171,14 +173,14 @@
         </div>
       </section>
       <section class="section-service">
-        <div class="service-wrapper">
+        <div class="service-wrapper container">
           <h2 class="sections-title service-title" id="service">
             наші послуги
           </h2>
           <ul class="service-list">
             <li class="service-item">
               <img
-                src="./images/icons/work-icon.png"
+                src="./images/icons/globe-solid.svg"
                 alt="work-and-training"
                 class="srvice-icon"
                 width="114px"
@@ -199,7 +201,7 @@
             </li>
             <li class="service-item">
               <img
-                src="./images/icons/immigration-icon.png"
+                src="./images/icons/work-icon.png"
                 alt="immigration"
                 class="srvice-icon"
                 width="89px"
@@ -244,7 +246,7 @@
       <section
         class="section-scope-of-work rotate-line-before rotate-line-after"
       >
-        <div class="scope-of-work-wrapper">
+        <div class="scope-of-work-wrapper container">
           <h2 class="sections-title" id="scope-of-work">сфери промисловості</h2>
           <ul class="scope-of-work-list">
             <li
@@ -392,7 +394,7 @@
         </div>
       </section>
       <section class="section-how-we-work">
-        <div class="how-we-work-wrapper">
+        <div class="how-we-work-wrapper container">
           <h2 class="sections-title how-we-work-title" id="how-we-work">
             як ми працюємо
           </h2>
@@ -401,10 +403,10 @@
               <div class="how-we-work-counter-wrapper">
                 <p class="step">01</p>
                 <p class="step-of">/06</p>
+                <h3 class="article-title how-we-work-step-name">
+                  Підбираємо програму
+                </h3>
               </div>
-              <h3 class="article-title how-we-work-step-name">
-                Підбираємо програму
-              </h3>
               <p class="article-description">
                 Є десятки варіантів і програм. Ми виберемо те, що найбільше
                 підходить по вашій кваліфікації, термінам, очікуванням і
@@ -415,10 +417,10 @@
               <div class="how-we-work-counter-wrapper">
                 <p class="step">02</p>
                 <p class="step-of">/06</p>
+                <h3 class="article-title how-we-work-step-name">
+                  Підписуємо догвовір
+                </h3>
               </div>
-              <h3 class="article-title how-we-work-step-name">
-                Підписуємо догвовір
-              </h3>
               <p class="article-description">
                 Ви студент, їдете на стажування - готуємо договір про офіційне
                 оформлення в навчальному закладі. Якщо це професійна імміграція
@@ -429,10 +431,10 @@
               <div class="how-we-work-counter-wrapper">
                 <p class="step">03</p>
                 <p class="step-of">/06</p>
+                <h3 class="article-title how-we-work-step-name">
+                  Збираємо та подаємо документи
+                </h3>
               </div>
-              <h3 class="article-title how-we-work-step-name">
-                Збираємо та подаємо документи
-              </h3>
               <p class="article-description">
                 Разом з вами готуємо та подаємо пакет документів, при
                 необхідності переводимо та нотаріально завіряємо їх. Якщо ви
@@ -444,10 +446,11 @@
               <div class="how-we-work-counter-wrapper">
                 <p class="step">04</p>
                 <p class="step-of">/06</p>
+                <h3 class="article-title how-we-work-step-name">
+                  <!-- Стежимо за процесом та добиваємося позитивного результату -->
+                  Стежимо за процесом
+                </h3>
               </div>
-              <h3 class="article-title how-we-work-step-name">
-                Стежимо за процесом та добиваємося позитивного результату
-              </h3>
               <p class="article-description">
                 Отримуєте договір на навчання або стажування з деталізацією всіх
                 умов. Контролюємо процес схвалення від відповідних відомств або
@@ -459,8 +462,10 @@
               <div class="how-we-work-counter-wrapper">
                 <p class="step">05</p>
                 <p class="step-of">/06</p>
+                <h3 class="article-title how-we-work-step-name">
+                  Супроводжуємо
+                </h3>
               </div>
-              <h3 class="article-title how-we-work-step-name">Супроводжуємо</h3>
               <p class="article-description">
                 Оформлюємо візи, страховку, квитки і трансфер. Під час програми
                 ми, наші партнери і представники весь час на зв'язку з вами з
@@ -471,8 +476,8 @@
               <div class="how-we-work-counter-wrapper">
                 <p class="step">06</p>
                 <p class="step-of">/06</p>
+                <h3 class="article-title how-we-work-step-name">Нові цілі</h3>
               </div>
-              <h3 class="article-title how-we-work-step-name">Нові цілі</h3>
               <p class="article-description">
                 Крім досвіду і знань, отриманих під час наших програм часто
                 виникають нові цілі - після навчання поїхати на практику, потім
@@ -737,7 +742,7 @@
     </main>
     <!-- Footer -->
     <footer class="footer" id="footer">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper container">
         <div class="contact-information">
           <a href="#" class="logo-link">
             <img
@@ -765,9 +770,7 @@
           </p>
           <p class="cont-info">
             E-mail:<br />
-            <a href="email:[kolomiets1990@gmail.com]" class="email"
-              >kolomiets1990@gmail.com</a
-            >
+            <a href="mailto:office@uman.ag" class="email">office@uman.ag</a>
           </p>
           <ul class="social-list">
             <li class="social-item">
@@ -807,7 +810,7 @@
           <h2 class="sections-title write-to-us">Напишіть нам</h2>
           <div class="form-wrapper">
             <form
-              action="https://formspree.io/kolomiets1990@gmail.com"
+              action="https://formspree.io/office@uman.ag"
               method="POST"
               class="form"
             >
@@ -882,7 +885,7 @@
           </p>
           <button class="close-modal js-close-modal"></button>
           <ul class="modal-categories-list">
-            <li class="modal-categories-item">
+            <li class="modal-categories-item work-and-tr-item">
               <img
                 src="./images/countries/germany.jpg"
                 alt=""
@@ -901,13 +904,11 @@
                 </ul>
               </div>
             </li>
-            <li class="modal-categories-item">
+            <li class="modal-categories-item work-and-tr-item">
               <img
                 src="./images/countries/denmark.jpg"
                 alt=""
                 class="modal-item-img"
-                width="300px"
-                height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">данія</p>
@@ -922,13 +923,11 @@
                 </ul>
               </div>
             </li>
-            <li class="modal-categories-item">
+            <li class="modal-categories-item work-and-tr-item">
               <img
                 src="./images/countries/usa.jpg"
                 alt=""
                 class="modal-item-img"
-                width="300px"
-                height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">сша</p>
@@ -943,13 +942,11 @@
                 </ul>
               </div>
             </li>
-            <li class="modal-categories-item">
+            <li class="modal-categories-item work-and-tr-item">
               <img
                 src="./images/countries/irish.jpg"
                 alt=""
                 class="modal-item-img"
-                width="300px"
-                height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">ірладнія</p>
@@ -964,13 +961,11 @@
                 </ul>
               </div>
             </li>
-            <li class="modal-categories-item">
+            <li class="modal-categories-item work-and-tr-item">
               <img
                 src="./images/countries/sweden.jpg"
                 alt=""
                 class="modal-item-img"
-                width="300px"
-                height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">швеція</p>
@@ -985,13 +980,11 @@
                 </ul>
               </div>
             </li>
-            <li class="modal-categories-item">
+            <li class="modal-categories-item work-and-tr-item">
               <img
                 src="./images/countries/england.jpg"
                 alt=""
                 class="modal-item-img"
-                width="300px"
-                height="400px"
               />
               <div class="item-cover-gradient">
                 <p class="country-name">англія</p>
@@ -1213,7 +1206,7 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Типова програма включатиме практичний досвід роботи:
                   нормування кормів, контроль навколишнього середовища,
                   моніторинг здоров'я та ветеринарна допомога! Будьте готові,
@@ -1221,7 +1214,7 @@
                   працювати з тваринами, щоб забезпечити здоров'я і благополуччя
                   тварин, оскільки вони отримують розуміння часу та відданості
                   справі вирощування свиней!
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1302,16 +1295,16 @@
           <li class="modal-categories-item">
             <img src="./images/cows-2.jpg" alt="cows" class="modal-item-img" />
             <div class="item-cover-gradient">
-              <p class="country-name">молочарня</p>
+              <p class="country-name">молочна ферма</p>
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Отримайте досвід на деяких з найбільш прогресивних молочних
                   ферм у приведених нижче країнах світу. Отримайте можливість
                   вчитися з широкого спектру заходів від догляду за стадами до
                   маркетингу молочних продуктів.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1396,16 +1389,16 @@
               class="modal-item-img"
             />
             <div class="item-cover-gradient">
-              <p class="country-name">скотарство</p>
+              <p class="country-name">відгодівля ВРХ</p>
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Як працівник по програмі великої рогатої худоби, він отримає
                   практичний досвід в операціях великої рогатої худоби;
                   отелення, відлучення, розведення та приготування кормів.
                   Управління стадом і пасовищами.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1490,14 +1483,14 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Отримайте змогу заробити великі кошти та підвищити рівень
                   своїх знань і навичок у сфері ветеринарного догляду за кіньми.
                   Завдяки цій практичній програмі ви краще зрозумієте
                   індустріальну промисловість, необхідну допомогу, яка піде на
                   піклування про коней, а також новітні технології у галузі
                   ветеринарної техніки.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1554,13 +1547,13 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Ця програма включає можливості для запуску деяких з найновіших
                   комбайнів і технологій. Отримати вплив на велику операцію
                   збору врожаю та вивчити найбільш ефективні методи збирання на
                   замовлення поряд із загальними навичками технічного
                   обслуговування та збутом культур.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1621,14 +1614,14 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Програми роботи на теплиці пропонують працівникам якісним
                   досвід та високий заробіток з вирощування та догляду за
                   рослинами для роздрібної торгівлі та оптової торгівлі. За
                   допомогою програми підготовки теплиць ви дізнаєтеся, як
                   вирощувати і доглядати за різноманітними рослинами на основі
                   циклу вирощування кожної рослини.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1717,12 +1710,12 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Як учасник програми підготовки ландшафтів, ви матимете
                   можливість працювати у професійному середовищі з житловими та
                   діловими приміщеннями, стежити за ландшафтними проектами,
                   використовувати машини, будувати ландшафтні структури.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1763,7 +1756,7 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Розміщення програм для садів включає невеликі фрукти, м'які
                   фрукти та яблука. Незалежно від того, чи шукаєте ви невелику
                   сільськогосподарську діяльність, або велику комерційну
@@ -1771,7 +1764,7 @@
                   ваших навичок та інтересів. Будучи учасником програми в саду,
                   ви отримаєте практичний досвід і глибокі знання про галузь
                   садівництва.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1860,14 +1853,14 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   Завдяки даній програмі з виробництва овочів ви отримаєте не
                   тільки практичний досвід роботи з різними овочами але і
                   неймовірно високий заробіток. Можливості роботи включають як
                   малі ферми, так і великі операції. Можливо, ви навіть матимете
                   можливість ознайомитися з фермерами, якими продаються деякі
                   вироби, вирощені на фермі.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -1956,7 +1949,7 @@
             </div>
             <div class="modal-item-overlay">
               <div class="countries-list-wrapper">
-                <p class="country-icons-label">
+                <!-- <p class="country-icons-label">
                   На програмі виноградарства працівник може допомогти у багатьох
                   різних аспектах виробництва виноградників, включаючи
                   вирощування винограду, відбір проб, керування пологами,
@@ -1965,7 +1958,7 @@
                   більшість аспектів виноградника, включаючи відбір проб,
                   процеси вирощування винограду, керування балдахіном, програми
                   обприскування та споживання врожаю.
-                </p>
+                </p> -->
                 <ul class="countries-icons-list">
                   <li class="countries-icons-item">
                     <img
@@ -2609,6 +2602,12 @@
           >зареєструватись</a
         >
       </div>
+
+      <!-- <div class="modal country-description-modal" data-modal="canada-">
+        <div class="modal-wrapper">
+            <button class="close-modal orange js-close-modal"></button> 
+        </div>
+      </div> -->
     </div>
 
     <script>
