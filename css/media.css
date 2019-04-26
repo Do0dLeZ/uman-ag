@@ -1,9 +1,230 @@
-@media (max-width: 600px) {
-  /* .choose-language {
-    display: none;
-  } */
+@media (min-width: 1000px) {
+  #btn-up {
+    display: none; /* Hidden by default */
+    width: 24px;
+    height: 24px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 10px solid transparent;
+    outline: none; /* Remove outline */
+    background-color: transparent;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 24px; /* Increase font size */
+    background-image: url("../images/icons/arrow-up-solid.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-  .all-rights-reserved {
-    display: none;
+  #btn-up:hover {
+    background-color: rgba(
+      85,
+      85,
+      85
+    ); /* Add a dark-grey background on hover */
+    border: 10px solid rgba(85, 85, 85);
+    background-image: url("../images/icons/arrow-up-solid-orange.svg");
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .logo-link {
+    margin-right: 15px;
+  }
+
+  .header-banner-wrapper {
+    min-height: 1100px;
+  }
+
+  .header {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50vh;
+    position: static;
+  }
+
+  .nav {
+    display: flex;
+    min-width: 700px;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    position: static;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    order: 1;
+  }
+
+  .language-item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-right: 25px;
+  }
+
+  .nav-link,
+  .choose-language {
+    font-size: 18px;
+  }
+
+  .header-title-wrapper {
+    max-width: 1170px;
+  }
+
+  .main-title {
+    font-size: 42px;
+  }
+
+  .main-description {
+    font-size: 36px;
+  }
+
+  .rotate-line-before:before {
+    top: -140px;
+  }
+
+  .rotate-line-after:after {
+    bottom: -140px;
+  }
+
+  .sections-title {
+    font-size: 48px;
+  }
+
+  .why-us-item {
+    max-width: 350px;
+  }
+
+  .section-service {
+    background-image: url("../images/service-background-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+  }
+
+  .service-title {
+    padding-top: 80px;
+  }
+
+  .service-item {
+    max-width: 300px;
+    padding-top: 130px;
+  }
+
+  .service-description {
+    min-height: 150px;
+  }
+
+  .scope-of-work-item {
+    max-width: 374px;
+  }
+
+  .scope-of-work-img {
+    min-width: 368px;
+    max-width: 370px;
+    height: 225px;
+  }
+
+  .section-how-we-work {
+    background-image: url("../images/how-we-work.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1100px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .how-we-work-title {
+    padding-top: 200px;
+  }
+
+  .how-we-work-item {
+    padding-top: 50px;
+    min-width: 350px;
+    max-width: 370px;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .ctrl-prev,
+  .ctrl-next {
+    top: 50%;
+  }
+
+  .ctrl-prev {
+    left: 10%;
+  }
+
+  .ctrl-next {
+    right: 10%;
+  }
+
+  .active-slide {
+    display: flex;
+    align-items: center;
+  }
+
+  .comments-block-header-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 0px;
+  }
+
+  .comments-person-avatar {
+    position: static;
+  }
+
+  .quote-cntx {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu";
+    max-width: 600px;
+  }
+
+  .margin-right-for-inputs {
+    margin-right: 15px;
+  }
+
+  .modal {
+    max-width: 80%;
+  }
+
+  .modal-wrapper {
+    max-width: 1100px;
+  }
+
+  .modal-categories-item {
+    width: 300px;
+  }
+
+  .modal-categories-item.item-to-grow {
+    width: 45%;
+  }
+
+  .study-context-wrapper {
+    max-width: 50%;
+  }
+
+  .immigration-item {
+    max-width: 45%;
   }
 }

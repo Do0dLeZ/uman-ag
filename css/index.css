@@ -33,7 +33,6 @@
 
 .logo-link {
   text-decoration: none;
-  /* margin-right: 15px; */
 }
 
 .change-language-btn {
@@ -82,7 +81,10 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  /* margin: 0 auto; */
+}
+
+.language-item:not(:last-child) {
+  margin-right: 25px;
 }
 
 .choose-language {
@@ -91,7 +93,7 @@
   margin-bottom: 5px;
 }
 
-.nav-item:not(:last-child) {
+.nav-item {
   margin-bottom: 13px;
 }
 
@@ -434,7 +436,7 @@
 .section-comments {
   position: relative;
   background-color: var(--background-color-comments);
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .section-comments:after,
@@ -444,7 +446,7 @@
 }
 
 .slide-wrapper {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
 }
 
@@ -469,7 +471,7 @@
 
 .my-slides {
   width: 100%;
-  min-height: 400px;
+  /* min-height: 400px; */
   display: none;
 }
 
@@ -538,14 +540,8 @@
 }
 
 .comments-block-header-wrapper {
-  /* display: flex;
-  justify-content: space-around; */
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
   margin: 0 auto;
   padding-top: 200px;
-  /* position: relative; */
-  /* display: inline; */
 }
 
 .comments-person-avatar {
@@ -558,13 +554,9 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  /* margin-bottom: 25px; */
 }
 
 .person-details {
-  /* min-width: 320px;
-  max-width: 350px; */
-  /* margin: 0 auto; */
   min-width: 320px;
   padding: 0 40px;
 }
@@ -581,7 +573,6 @@
 
 .quote-cntx {
   font-size: 16px;
-  /* width: 100%; */
   margin-bottom: 10px;
   font-family: "Ubuntu";
 }
@@ -600,11 +591,9 @@
 
 .footer-wrapper {
   display: flex;
-  /* margin: 0 auto; */
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  /* max-width: 1200px; */
   padding-bottom: 50px;
 }
 
@@ -616,7 +605,6 @@
 
 .cont-info {
   font-family: "Ubuntu";
-  /* margin-bottom: 10px; */
 }
 
 .address {
@@ -666,10 +654,6 @@
   margin-bottom: 25px;
   flex-grow: 1;
 }
-
-/* .margin-right-for-inputs {
-  margin-right: 15px;
-} */
 
 .input-comments {
   min-width: 100%;
@@ -817,7 +801,7 @@
 }
 
 .modal-categories-item.work-and-tr-item {
-  width: 300px;
+  max-width: 300px;
 }
 
 .scope-description {
